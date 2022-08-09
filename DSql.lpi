@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="11"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="DSql"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <MinorVersionNr Value="8"/>
+      <RevisionNr Value="5"/>
+      <BuildNr Value="9"/>
+      <Attributes pvaPreRelease="True" pvaPrivateBuild="True"/>
+      <StringTable Comments="Debio Sql, A Firebird Management Tool" CompanyName="Debio" InternalName="DSql" LegalTrademarks="Debio Sql" OriginalFilename="dsql" ProductName="Debio Sql"/>
+    </VersionInfo>
+    <MacroValues Count="1">
+      <Macro1 Name="DSqlVer" Value="086"/>
+    </MacroValues>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+      <SharedMatrixOptions Count="1">
+        <Item1 ID="049154866633" Modes="default" Type="IDEMacro" MacroName="DSqlVer" Value="086"/>
+      </SharedMatrixOptions>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default"/>
+      </Modes>
+    </RunParams>
+    <RequiredPackages Count="6">
+      <Item1>
+        <PackageName Value="UIBLaz"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="TurboPowerIPro"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="SynEdit"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="Debio"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="LCL"/>
+      </Item6>
+    </RequiredPackages>
+    <Units Count="42">
+      <Unit0>
+        <Filename Value="DSql.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="dufrmdsqlmain.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmDSqlMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmDSqlMain"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="Dialogs/dufrmserverproperties.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmServerProperties"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmServerProperties"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="dudsqlnodes.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duDSqlNodes"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="Modules/dudmmainmodule.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dmMainModule"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="dudmMainModule"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="duutil.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duUtil"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="dutypes.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duTypes"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="duconsts.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duConsts"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="TODO.txt"/>
+        <IsPartOfProject Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="Dialogs/dufrmlogin.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmLogin"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmLogin"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="Dialogs/dufrmdatabseproperties.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmDatabseProperties"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmDatabseProperties"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="Frames/duframeditor.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dframEditor"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="duframEditor"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="duframes.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duFrames"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="duconnections.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duConnections"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="firebirdReserveds.txt"/>
+        <IsPartOfProject Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="dulog.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duLog"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="Frames/duframframe.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dframBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="duframFrame"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="Frames/duframtable.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dframTable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="duframTable"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="Frames/duframtest.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Frame2"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="duframTest"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="Dialogs/frmdlgconnectionretrive.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frmDlgConnectionRetrive"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="dusqlparser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duSqlParser"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="dusifirebird.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duSIFirebird"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="Frames/duframfuncproc.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Frame1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="duframFuncProc"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="dudmetadata.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="dudMetadata"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="SqlObjects/dsql.sqlobject.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DSql.SqlObject"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="SqlObjects/dsql.so.table.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="dsql.so.Table"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="Dialogs/dufrmdomain.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmDomain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmDomain"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="../../../Desktop/Delete ME!/sqlscript.sql"/>
+        <IsPartOfProject Value="True"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="Dialogs/dufrmeditorwindow.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditorWindow"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmEditorWindow"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="Dialogs/dufrmcomment.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmComment"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmComment"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="Dialogs/dufrmdepend.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmDepend"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmDepend"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="Dialogs/dufrminsertcode.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmInsertCode"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmInsertCode"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="Dialogs/dufrmcopytable.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmCopyTable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmCopyTable"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="dufrmbase.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmBase"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="Dialogs/dufrmsettings.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmSettings"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmSettings"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="Dialogs/dufrmtablereorderfields.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmTableReorderFields"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmtableReorderFields"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="Dialogs/dufrmconfigdsql.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmConfig"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmConfigDsql"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="Dialogs/dufrmabout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmAbout"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmAbout"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="Dialogs/dufrmtransactiondecision.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmTransactionDecision"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmTransactionDecision"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="Dialogs/dufrmcreatedatabase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmCreateDatbase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmCreateDatabase"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="Dialogs/firebird/dufrmfbbackup.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmFBBackup"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmFBBackup"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="Dialogs/firebird/dufrmfbrestore.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmFBRestore"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmFBRestore"/>
+      </Unit41>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="Bin/DSql-$(DSqlVer)-$(PltWgs)"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="Frames;Modules;Dialogs;SqlObjects"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <IncludeAssertionCode Value="True"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+        <StackChecks Value="True"/>
+      </Checks>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <UseHeaptrc Value="True"/>
+        <UseExternalDbgSyms Value="True"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="5">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+      <Item4>
+        <Name Value="EIBDatabaseError"/>
+      </Item4>
+      <Item5>
+        <Name Value="Exception"/>
+      </Item5>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

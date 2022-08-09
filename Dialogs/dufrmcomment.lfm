@@ -1,0 +1,90 @@
+object FrmComment: TFrmComment
+  Left = 2170
+  Height = 306
+  Top = 250
+  Width = 443
+  Caption = 'Commenting On ""'
+  ClientHeight = 306
+  ClientWidth = 443
+  Position = poMainFormCenter
+  LCLVersion = '1.9.0.0'
+  object mmComment: TMemo
+    Left = 8
+    Height = 227
+    Top = 32
+    Width = 427
+    Align = alClient
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 8
+    Height = 31
+    Top = 267
+    Width = 427
+    Align = alBottom
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BorderSpacing.Bottom = 8
+    BevelOuter = bvNone
+    ClientHeight = 31
+    ClientWidth = 427
+    TabOrder = 1
+    object BitBtn1: TBitBtn
+      Left = 352
+      Height = 31
+      Top = 0
+      Width = 75
+      Align = alRight
+      BorderSpacing.Left = 8
+      Default = True
+      DefaultCaption = True
+      Kind = bkOK
+      ModalResult = 1
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 225
+      Height = 31
+      Top = 0
+      Width = 119
+      Align = alRight
+      AutoSize = True
+      BorderSpacing.Left = 8
+      Caption = '&Leave It Empty'
+      Kind = bkOK
+      ModalResult = 1
+      TabOrder = 1
+    end
+    object BitBtn3: TBitBtn
+      Left = 142
+      Height = 31
+      Top = 0
+      Width = 75
+      Align = alRight
+      BorderSpacing.Left = 8
+      Cancel = True
+      DefaultCaption = True
+      Kind = bkCancel
+      ModalResult = 2
+      TabOrder = 2
+    end
+  end
+  object Panel2: TPanel
+    Left = 8
+    Height = 16
+    Top = 8
+    Width = 427
+    Align = alTop
+    Alignment = taLeftJustify
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelOuter = bvNone
+    Caption = 'Commen On ""'
+    TabOrder = 2
+  end
+end

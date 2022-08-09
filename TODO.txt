@@ -1,0 +1,173 @@
++++++++++++++UserName And Passwords!+++++++++++++
+  To store user name and passwords securely use a
+Master key!
+
+  Everytime for user try connect a Database norm-
+lly prompt for Username and password! Except user
+ask to save Username and Passwords! To do this we
+ask for a MASTERKEY to store USERNAME`s and PASS-
+WORDS, All of username and passwords for all of
+stored username and passwords will encrypted with
+it to an encrypted file with MASTERKEY!
+-------------UserName And Passwords!-------------
+
+
+
+
+        Assigned(BLOB_close) and
+        Assigned(BLOB_dump) and
+        Assigned(BLOB_edit) and
+        Assigned(BLOB_get) and
+        Assigned(BLOB_load) and
+        Assigned(BLOB_open) and
+        Assigned(BLOB_put) and
+        Assigned(BLOB_text_dump) and
+        Assigned(BLOB_text_load) and
+        Assigned(Bopen) and
+        Assigned(isc_add_user) and
+        Assigned(isc_array_gen_sdl) and
+        Assigned(isc_array_get_slice) and
+        Assigned(isc_array_lookup_bounds) and
+        Assigned(isc_array_lookup_desc) and
+        Assigned(isc_array_put_slice) and
+        Assigned(isc_array_set_desc) and
+        Assigned(isc_attach_database) and
+        Assigned(isc_blob_default_desc) and
+        Assigned(isc_blob_gen_bpb) and
+        Assigned(isc_blob_info) and
+        Assigned(isc_blob_lookup_desc) and
+        Assigned(isc_blob_set_desc) and
+        Assigned(isc_cancel_blob) and
+        Assigned(isc_cancel_events) and
+        Assigned(isc_close) and
+        Assigned(isc_close_blob) and
+        Assigned(isc_commit_retaining) and
+        Assigned(isc_commit_transaction) and
+        Assigned(isc_compile_request) and
+        Assigned(isc_compile_request2) and
+        Assigned(isc_create_blob) and
+        Assigned(isc_create_blob2) and
+        Assigned(isc_create_database) and
+        Assigned(isc_database_info)
+        {$IFNDEF FB30_UP}and
+        Assigned(isc_ddl){$ENDIF} and
+        Assigned(isc_declare) and
+        Assigned(isc_decode_date) and
+        Assigned(isc_decode_sql_date) and
+        Assigned(isc_decode_sql_time) and
+        Assigned(isc_decode_timestamp) and
+        Assigned(isc_delete_user) and
+        Assigned(isc_describe) and
+        Assigned(isc_describe_bind) and
+        Assigned(isc_detach_database) and
+        Assigned(isc_drop_database) and
+        Assigned(isc_dsql_alloc_statement2) and
+        Assigned(isc_dsql_allocate_statement) and
+        Assigned(isc_dsql_describe) and
+        Assigned(isc_dsql_describe_bind) and
+        Assigned(isc_dsql_exec_immed2) and
+        Assigned(isc_dsql_exec_immed3_m) and
+        Assigned(isc_dsql_execute) and
+        Assigned(isc_dsql_execute_immediate) and
+        Assigned(isc_dsql_execute_immediate_m) and
+        Assigned(isc_dsql_execute_m) and
+        Assigned(isc_dsql_execute2) and
+        Assigned(isc_dsql_execute2_m) and
+        Assigned(isc_dsql_fetch) and
+        Assigned(isc_dsql_fetch_m) and
+        Assigned(isc_dsql_finish) and
+        Assigned(isc_dsql_free_statement) and
+        Assigned(isc_dsql_insert) and
+        Assigned(isc_dsql_insert_m) and
+        Assigned(isc_dsql_prepare) and
+        Assigned(isc_dsql_prepare_m) and
+        Assigned(isc_dsql_release) and
+        Assigned(isc_dsql_set_cursor_name) and
+        Assigned(isc_dsql_sql_info) and
+        Assigned(isc_embed_dsql_close) and
+        Assigned(isc_embed_dsql_declare) and
+        Assigned(isc_embed_dsql_describe) and
+        Assigned(isc_embed_dsql_describe_bind) and
+        Assigned(isc_embed_dsql_execute) and
+        Assigned(isc_embed_dsql_execute_immed) and
+        Assigned(isc_embed_dsql_execute2) and
+        Assigned(isc_embed_dsql_fetch) and
+        Assigned(isc_embed_dsql_insert) and
+        Assigned(isc_embed_dsql_open) and
+        Assigned(isc_embed_dsql_open2) and
+        Assigned(isc_embed_dsql_prepare) and
+        Assigned(isc_embed_dsql_release) and
+        Assigned(isc_encode_date) and
+        Assigned(isc_encode_sql_date) and
+        Assigned(isc_encode_sql_time) and
+        Assigned(isc_encode_timestamp) and
+        Assigned(isc_event_block)
+{$IFDEF FB21_UP}
+        // not exported in fbclient.so 2.5
+        // and
+        Assigned(isc_event_block_a)
+{$ENDIF}
+        and
+        Assigned(isc_event_counts) and
+        Assigned(isc_execute) and
+        Assigned(isc_execute_immediate) and
+        Assigned(isc_expand_dpb) and
+        Assigned(isc_free) and
+        Assigned(isc_ftof) and
+        Assigned(isc_get_segment) and
+        Assigned(isc_fetch) and
+        Assigned(isc_get_slice) and
+        Assigned(isc_interprete) and
+        Assigned(isc_modify_dpb) and
+        Assigned(isc_modify_user) and
+        Assigned(isc_open) and
+        Assigned(isc_open_blob) and
+        Assigned(isc_open_blob2) and
+        Assigned(isc_portable_integer) and
+        Assigned(isc_prepare) and
+        Assigned(isc_prepare_transaction) and
+        Assigned(isc_prepare_transaction2) and
+        Assigned(isc_print_blr) and
+        Assigned(isc_print_sqlerror) and
+        Assigned(isc_print_status) and
+        Assigned(isc_put_segment) and
+        Assigned(isc_put_slice) and
+        Assigned(isc_qtoq) and
+        Assigned(isc_que_events) and
+        Assigned(isc_receive) and
+        Assigned(isc_reconnect_transaction) and
+        Assigned(isc_release_request) and
+        Assigned(isc_request_info) and
+        Assigned(isc_rollback_retaining) and
+        Assigned(isc_rollback_transaction) and
+        Assigned(isc_seek_blob) and
+        Assigned(isc_send) and
+        Assigned(isc_service_attach) and
+        Assigned(isc_service_detach) and
+        Assigned(isc_service_query) and
+        Assigned(isc_service_start) and
+{$IFDEF FB30_UP}
+        //Assigned(fb_ping) and
+        Assigned(fb_get_database_handle) and
+        //Assigned(fb_get_transaction_handle) and
+{$ENDIF}
+        Assigned(isc_sql_interprete) and
+        Assigned(isc_sqlcode) and
+        Assigned(isc_start_and_send) and
+        Assigned(isc_start_multiple) and
+        Assigned(isc_start_request) and
+        Assigned(isc_start_transaction) and
+        Assigned(isc_transact_request) and
+        Assigned(isc_transaction_info) and
+        Assigned(isc_unwind_request) and
+        Assigned(isc_vax_integer) and
+        Assigned(isc_version) and
+        Assigned(isc_vtof) and
+        Assigned(isc_vtov) and
+        Assigned(isc_wait_for_event)
+      {$IFDEF INTERBASEORFIREBIRD}
+        and
+        Assigned(isc_set_debug) and
+        Assigned(BLOB_display)
+
+

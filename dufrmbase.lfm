@@ -1,0 +1,7 @@
+object DFrmBase: TDFrmBase
+  Left = 2170
+  Height = 240
+  Top = 250
+  Width = 320
+  Caption = '?'
+end

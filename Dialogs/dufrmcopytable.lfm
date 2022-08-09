@@ -1,0 +1,116 @@
+object FrmCopyTable: TFrmCopyTable
+  Left = 523
+  Height = 526
+  Top = 16
+  Width = 1338
+  Caption = 'FrmCopyTable'
+  ClientHeight = 526
+  ClientWidth = 1338
+  OnShow = FormShow
+  LCLVersion = '1.9.0.0'
+  object cbDatabases: TComboBox
+    Left = 8
+    Height = 25
+    Top = 24
+    Width = 392
+    ItemHeight = 0
+    OnChange = cbDatabasesChange
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 406
+    Height = 28
+    Top = 24
+    Width = 26
+    Action = actConnect
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 8
+    Width = 95
+    Caption = 'Source Database:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 64
+    Width = 73
+    Caption = 'Source Table:'
+    ParentColor = False
+  end
+  object cbSourceTable: TComboBox
+    Left = 8
+    Height = 25
+    Top = 80
+    Width = 392
+    ItemHeight = 0
+    OnChange = cbSourceTableChange
+    Style = csDropDownList
+    TabOrder = 1
+  end
+  object lbDestFields: TListBox
+    Left = 8
+    Height = 376
+    Top = 144
+    Width = 272
+    ItemHeight = 0
+    OnDblClick = lbDestFieldsDblClick
+    OnDrawItem = lbDestFieldsDrawItem
+    ScrollWidth = 268
+    Style = lbOwnerDrawFixed
+    TabOrder = 2
+    TopIndex = -1
+  end
+  object lbSourceFields: TListBox
+    Left = 288
+    Height = 376
+    Top = 144
+    Width = 272
+    ItemHeight = 0
+    OnDblClick = lbSourceFieldsDblClick
+    OnDrawItem = lbDestFieldsDrawItem
+    ScrollWidth = 268
+    Style = lbOwnerDrawFixed
+    TabOrder = 3
+    TopIndex = -1
+  end
+  object lbCopyFields: TListBox
+    Left = 568
+    Height = 376
+    Top = 144
+    Width = 272
+    ItemHeight = 0
+    OnDblClick = lbCopyFieldsDblClick
+    ScrollWidth = 268
+    TabOrder = 4
+    TopIndex = -1
+  end
+  object Label3: TLabel
+    Left = 288
+    Height = 15
+    Top = 128
+    Width = 72
+    Caption = 'Source Fields'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 15
+    Top = 128
+    Width = 98
+    Caption = 'Destination Fields'
+    ParentColor = False
+  end
+  object aclActions: TActionList
+    Images = dmMainModule.ilPopupMenu
+    Left = 632
+    Top = 24
+    object actConnect: TAction
+      ImageIndex = 12
+      OnExecute = actConnectExecute
+    end
+  end
+end

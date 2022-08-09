@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="11"/>
+    <BuildModes Count="6" Active="Debug">
+      <Item1 Name="Debug">
+        <MacroValues Count="1">
+          <Macro1 Name="DSqlVer" Value="086"/>
+        </MacroValues>
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="Bin/DSql-$(DSqlVer)-$(PltWgs)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="Frames;Modules;Dialogs;SqlObjects;Dialogs/firebird"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
+          </SearchPaths>
+          <Conditionals Value="PltWgs := 'Linux64-Gtk2';"/>
+          <Parsing>
+            <SyntaxOptions>
+              <IncludeAssertionCode Value="True"/>
+              <CStyleMacros Value="True"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <Checks>
+              <IOChecks Value="True"/>
+              <RangeChecks Value="True"/>
+              <OverflowChecks Value="True"/>
+              <StackChecks Value="True"/>
+            </Checks>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <UseHeaptrc Value="True"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+          <Other>
+            <ExecuteAfter>
+              <ShowAllMessages Value="True"/>
+            </ExecuteAfter>
+          </Other>
+        </CompilerOptions>
+      </Item1>
+      <Item2 Name="Release">
+        <MacroValues Count="1">
+          <Macro1 Name="DSqlVer" Value="086"/>
+        </MacroValues>
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="Bin/DSql-$(DSqlVer)-$(PltWgs)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="Frames;Modules;Dialogs;SqlObjects;Dialogs/firebird"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
+          </SearchPaths>
+          <Conditionals Value="PltWgs := 'Linux64-Gtk2';"/>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="Release Win64">
+        <MacroValues Count="1">
+          <Macro1 Name="DSqlVer" Value="086"/>
+        </MacroValues>
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="Bin/DSql-$(DSqlVer)-$(PltWgs)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="Frames;Modules;Dialogs;SqlObjects;Dialogs/firebird"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
+          </SearchPaths>
+          <Conditionals Value="PltWgs := 'Win64';"/>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetCPU Value="x86_64"/>
+            <TargetOS Value="win64"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item3>
+      <Item4 Name="Release Win32">
+        <MacroValues Count="1">
+          <Macro1 Name="DSqlVer" Value="086"/>
+        </MacroValues>
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="Bin/DSql-$(DSqlVer)-$(PltWgs)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="Frames;Modules;Dialogs;SqlObjects;Dialogs/firebird"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
+          </SearchPaths>
+          <Conditionals Value="PltWgs := 'Win32';"/>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+          <Other>
+            <Verbosity>
+              <ShowAll Value="True"/>
+            </Verbosity>
+          </Other>
+        </CompilerOptions>
+      </Item4>
+      <Item5 Name="Release Qt4">
+        <MacroValues Count="2">
+          <Macro1 Name="DSqlVer" Value="086"/>
+        </MacroValues>
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="Bin/DSql-$(DSqlVer)-$(PltWgs)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="Frames;Modules;Dialogs;SqlObjects;Dialogs/firebird"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
+          </SearchPaths>
+          <Conditionals Value="PltWgs := 'Linux64-Qt4';"/>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item5>
+      <Item6 Name="Release Qt5">
+        <MacroValues Count="2">
+          <Macro2 Name="LCLWidgetType" Value="qt5"/>
+          <Macro1 Name="DSqlVer" Value="086"/>
+        </MacroValues>
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="Bin/DSql-$(DSqlVer)-$(PltWgs)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="Frames;Modules;Dialogs;SqlObjects;Dialogs/firebird"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
+          </SearchPaths>
+          <Conditionals Value="PltWgs := 'Linux64-Qt5';"/>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item6>
+      <SessionMatrixOptions Count="2">
+        <Item1 ID="448215957990" Modes="Release Qt4" Type="IDEMacro" MacroName="LCLWidgetType" Value="qt"/>
+        <Item2 ID="716373317135" Modes="Release Qt5" Type="IDEMacro" MacroName="LCLWidgetType" Value="qt5"/>
+      </SessionMatrixOptions>
+      <SessionEnabledMatrixOptions Count="6">
+        <Item1 Mode="Debug" Option="049154866633"/>
+        <Item2 Mode="Release" Option="049154866633"/>
+        <Item3 Mode="Release Win64" Option="049154866633"/>
+        <Item4 Mode="Release Win32" Option="049154866633"/>
+        <Item5 Mode="Release Qt4" Option="049154866633"/>
+        <Item6 Mode="Release Qt5" Option="049154866633"/>
+      </SessionEnabledMatrixOptions>
+    </BuildModes>
+    <Units Count="76">
+      <Unit0>
+        <Filename Value="DSql.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <CursorPos Y="4"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="dufrmdsqlmain.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmDSqlMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmDSqlMain"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="298"/>
+        <CursorPos X="41" Y="316"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="Dialogs/dufrmserverproperties.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmServerProperties"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmServerProperties"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="140"/>
+        <CursorPos X="53" Y="163"/>
+        <UsageCount Value="210"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="dudsqlnodes.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duDSqlNodes"/>
+        <TopLine Value="2014"/>
+        <CursorPos X="3" Y="2007"/>
+        <ExtraEditorCount Value="1"/>
+        <ExtraEditor1>
+          <EditorIndex Value="-1"/>
+          <TopLine Value="250"/>
+          <CursorPos X="18" Y="262"/>
+        </ExtraEditor1>
+        <UsageCount Value="209"/>
+        <Bookmarks Count="1">
+          <Item0 X="2" Y="433" ID="3"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="Modules/dudmmainmodule.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dmMainModule"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="dudmMainModule"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="1235"/>
+        <CursorPos X="25" Y="1247"/>
+        <ExtraEditorCount Value="1"/>
+        <ExtraEditor1>
+          <EditorIndex Value="-1"/>
+          <TopLine Value="1738"/>
+          <CursorPos Y="1752"/>
+        </ExtraEditor1>
+        <UsageCount Value="207"/>
+        <Bookmarks Count="1">
+          <Item0 X="40" Y="1217" ID="4"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="duutil.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duUtil"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="49"/>
+        <CursorPos Y="82"/>
+        <UsageCount Value="206"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="dutypes.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duTypes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="205"/>
+        <CursorPos X="3" Y="219"/>
+        <UsageCount Value="206"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="duconsts.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duConsts"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="597"/>
+        <CursorPos X="93" Y="611"/>
+        <UsageCount Value="206"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="TODO.txt"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="31"/>
+        <CursorPos X="35" Y="51"/>
+        <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="Dialogs/dufrmlogin.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmLogin"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmLogin"/>
+        <EditorIndex Value="11"/>
+        <CursorPos X="21" Y="43"/>
+        <UsageCount Value="209"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="Dialogs/dufrmdatabseproperties.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmDatabseProperties"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmDatabseProperties"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="49" Y="13"/>
+        <UsageCount Value="200"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="Frames/duframeditor.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dframEditor"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="duframEditor"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="72"/>
+        <CursorPos X="5" Y="83"/>
+        <UsageCount Value="202"/>
+        <Bookmarks Count="1">
+          <Item0 X="24" Y="1921" ID="5"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="duframes.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duFrames"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="284"/>
+        <CursorPos X="6" Y="286"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="duconnections.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duConnections"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="34" Y="8"/>
+        <UsageCount Value="200"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="firebirdReserveds.txt"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="dulog.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duLog"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="9"/>
+        <UsageCount Value="200"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="Frames/duframframe.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dframBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="duframFrame"/>
+        <EditorIndex Value="22"/>
+        <TopLine Value="20"/>
+        <CursorPos X="35" Y="36"/>
+        <UsageCount Value="242"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="Frames/duframtable.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dframTable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="duframTable"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="245"/>
+        <CursorPos X="90" Y="272"/>
+        <UsageCount Value="236"/>
+        <Bookmarks Count="1">
+          <Item0 X="63" Y="273" ID="1"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="Frames/duframtest.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Frame2"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="duframTest"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="29" Y="12"/>
+        <UsageCount Value="236"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="Dialogs/frmdlgconnectionretrive.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frmDlgConnectionRetrive"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="20"/>
+        <CursorPos X="36" Y="34"/>
+        <UsageCount Value="200"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="dusqlparser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duSqlParser"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="5" Y="14"/>
+        <UsageCount Value="217"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="dusifirebird.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="duSIFirebird"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2"/>
+        <CursorPos X="18" Y="2"/>
+        <UsageCount Value="200"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="Frames/duframfuncproc.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Frame1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="duframFuncProc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="17" Y="26"/>
+        <UsageCount Value="218"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="dudmetadata.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="dudMetadata"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="20" Y="8"/>
+        <UsageCount Value="201"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="SqlObjects/dsql.sqlobject.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DSql.SqlObject"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="23"/>
+        <CursorPos X="17" Y="23"/>
+        <UsageCount Value="207"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="SqlObjects/dsql.so.table.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="dsql.so.Table"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="34" Y="38"/>
+        <UsageCount Value="206"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="Dialogs/dufrmdomain.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmDomain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmDomain"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="132"/>
+        <CursorPos X="28" Y="160"/>
+        <UsageCount Value="200"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="../../../Desktop/Delete ME!/sqlscript.sql"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="45" Y="9"/>
+        <UsageCount Value="207"/>
+        <DefaultSyntaxHighlighter Value="SQL"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="Dialogs/dufrmeditorwindow.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditorWindow"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmEditorWindow"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="16" Y="40"/>
+        <UsageCount Value="201"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="Dialogs/dufrmcomment.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmComment"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmComment"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="39" Y="28"/>
+        <UsageCount Value="202"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="Dialogs/dufrmdepend.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmDepend"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmDepend"/>
+        <EditorIndex Value="21"/>
+        <TopLine Value="33"/>
+        <CursorPos X="22" Y="45"/>
+        <UsageCount Value="203"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="Dialogs/dufrminsertcode.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmInsertCode"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmInsertCode"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="8"/>
+        <CursorPos X="11" Y="13"/>
+        <UsageCount Value="201"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="Dialogs/dufrmcopytable.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmCopyTable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmCopyTable"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="217"/>
+        <CursorPos X="36" Y="232"/>
+        <UsageCount Value="201"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="dufrmbase.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmBase"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="22" Y="35"/>
+        <UsageCount Value="216"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="Dialogs/dufrmsettings.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmSettings"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmSettings"/>
+        <EditorIndex Value="17"/>
+        <TopLine Value="879"/>
+        <CursorPos Y="894"/>
+        <UsageCount Value="213"/>
+        <Bookmarks Count="1">
+          <Item0 Y="894" ID="2"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="Dialogs/dufrmtablereorderfields.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmTableReorderFields"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="duFrmtableReorderFields"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="72"/>
+        <CursorPos X="22" Y="87"/>
+        <UsageCount Value="200"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="Dialogs/dufrmconfigdsql.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmConfig"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmConfigDsql"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="27" Y="17"/>
+        <UsageCount Value="257"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="Dialogs/dufrmabout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmAbout"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmAbout"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <CursorPos X="41" Y="55"/>
+        <UsageCount Value="201"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="Dialogs/dufrmtransactiondecision.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmTransactionDecision"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmTransactionDecision"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="38"/>
+        <CursorPos X="26" Y="64"/>
+        <UsageCount Value="201"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="Dialogs/dufrmcreatedatabase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DFrmCreateDatbase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmCreateDatabase"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="124"/>
+        <CursorPos X="45" Y="130"/>
+        <UsageCount Value="200"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="Dialogs/firebird/dufrmfbbackup.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmFBBackup"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmFBBackup"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="55"/>
+        <CursorPos Y="79"/>
+        <UsageCount Value="259"/>
+        <Loaded Value="True"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="Dialogs/firebird/dufrmfbrestore.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmFBRestore"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dufrmFBRestore"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="28"/>
+        <CursorPos X="17" Y="66"/>
+        <UsageCount Value="212"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="../../../Lazarus-SVN/lazarus/components/synedit/synedit.pp"/>
+        <UnitName Value="SynEdit"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <UsageCount Value="45"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="../../../Lazarus-SVN/lazarus/components/synedit/synhighlightersql.pas"/>
+        <UnitName Value="SynHighlighterSQL"/>
+        <EditorIndex Value="18"/>
+        <TopLine Value="1061"/>
+        <CursorPos X="44" Y="1079"/>
+        <UsageCount Value="95"/>
+        <Loaded Value="True"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="../../../Lazarus-SVN/lazarus/components/synedit/synedithighlighter.pp"/>
+        <UnitName Value="SynEditHighlighter"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="730"/>
+        <CursorPos Y="751"/>
+        <UsageCount Value="22"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="../../../Lazarus-SVN/lazarus/lcl/include/wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5384"/>
+        <CursorPos Y="5407"/>
+        <UsageCount Value="81"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="../../../Lazarus-SVN/lazarus/lcl/grids.pas"/>
+        <UnitName Value="Grids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1284"/>
+        <CursorPos X="53" Y="1302"/>
+        <UsageCount Value="11"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="../../SRC_INC/Pascal/MaMrEzO/Debio/DJSON/debio.json.pp"/>
+        <UnitName Value="Debio.JSON"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1111"/>
+        <CursorPos Y="1148"/>
+        <UsageCount Value="15"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="../../../FPC/fpc/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="73"/>
+        <CursorPos X="3" Y="91"/>
+        <UsageCount Value="26"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="../../SRC_INC/Pascal/IBX/ibx-linux/fbintf/client/FBClientAPI.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="300"/>
+        <CursorPos X="26" Y="317"/>
+        <UsageCount Value="19"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="../../../Lazarus-SVN/lazarus/lcl/include/customedit.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="630"/>
+        <CursorPos Y="652"/>
+        <UsageCount Value="10"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="../../SRC_INC/Pascal/uib-master/source/uib.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1375"/>
+        <CursorPos X="3" Y="1378"/>
+        <UsageCount Value="103"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="../../SRC_INC/Pascal/uib-master/source/uiblib.pas"/>
+        <EditorIndex Value="20"/>
+        <TopLine Value="1530"/>
+        <CursorPos X="11" Y="1538"/>
+        <UsageCount Value="98"/>
+        <Loaded Value="True"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="../../SRC_INC/Pascal/uib-master/source/uibase.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="33" Y="33"/>
+        <UsageCount Value="73"/>
+      </Unit53>
+      <Unit54>
+        <Filename Value="../../../../Desktop/Delete Me!/ibx-embed/unit1.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="138"/>
+        <CursorPos X="7" Y="162"/>
+        <UsageCount Value="41"/>
+      </Unit54>
+      <Unit55>
+        <Filename Value="../../SRC_INC/Pascal/uib-master/source/uibsqlparser.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="200"/>
+        <CursorPos X="35" Y="215"/>
+        <UsageCount Value="10"/>
+      </Unit55>
+      <Unit56>
+        <Filename Value="../../../FPC/fpc/packages/fcl-db/src/sqldb/sqldb.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="3" Y="59"/>
+        <UsageCount Value="10"/>
+      </Unit56>
+      <Unit57>
+        <Filename Value="../../../FPC/fpc/packages/fcl-db/src/base/sqltypes.pp"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="41" Y="14"/>
+        <UsageCount Value="10"/>
+      </Unit57>
+      <Unit58>
+        <Filename Value="../../../Lazarus-SVN/lazarus/lcl/include/treeview.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="378"/>
+        <CursorPos Y="392"/>
+        <UsageCount Value="55"/>
+      </Unit58>
+      <Unit59>
+        <Filename Value="../../SRC_INC/Pascal/uib-master/source/uibconst.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="78"/>
+        <CursorPos X="42" Y="92"/>
+        <UsageCount Value="62"/>
+      </Unit59>
+      <Unit60>
+        <Filename Value="../../SRC_INC/Pascal/uib-master/source/uibscriptbuilder.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="175"/>
+        <CursorPos X="13" Y="193"/>
+        <UsageCount Value="6"/>
+      </Unit60>
+      <Unit61>
+        <Filename Value="../../../Lazarus-SVN/lazarus/lcl/lmessages.pp"/>
+        <UnitName Value="LMessages"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="460"/>
+        <CursorPos X="5" Y="478"/>
+        <UsageCount Value="10"/>
+      </Unit61>
+      <Unit62>
+        <Filename Value="../../../Lazarus-SVN/lazarus/lcl/include/customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="507"/>
+        <CursorPos Y="541"/>
+        <UsageCount Value="13"/>
+      </Unit62>
+      <Unit63>
+        <Filename Value="../../../Lazarus-SVN/lazarus/lcl/include/pagecontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="28"/>
+        <UsageCount Value="7"/>
+      </Unit63>
+      <Unit64>
+        <Filename Value="../../../Lazarus-SVN/lazarus/lcl/forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="423"/>
+        <CursorPos X="43" Y="445"/>
+        <UsageCount Value="23"/>
+      </Unit64>
+      <Unit65>
+        <Filename Value="../../../Lazarus-SVN/lazarus/lcl/include/scrollingwincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="276"/>
+        <CursorPos X="3" Y="278"/>
+        <UsageCount Value="6"/>
+      </Unit65>
+      <Unit66>
+        <Filename Value="../../SRC_INC/Pascal/IBX/ibx-linux/design/IBDBReg.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="364"/>
+        <CursorPos X="44" Y="391"/>
+        <UsageCount Value="26"/>
+      </Unit66>
+      <Unit67>
+        <Filename Value="../../../Lazarus-SVN/lazarus1.9End/components/synedit/synhighlightersql.pas"/>
+        <UnitName Value="SynHighlighterSQL"/>
+        <EditorIndex Value="19"/>
+        <TopLine Value="1145"/>
+        <CursorPos X="40" Y="1155"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit67>
+      <Unit68>
+        <Filename Value="../../../Lazarus-SVN/lazarus1.9End/components/synedit/syncompletion.pas"/>
+        <UnitName Value="SynCompletion"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="44" Y="6"/>
+        <UsageCount Value="24"/>
+      </Unit68>
+      <Unit69>
+        <Filename Value="../../../Lazarus-SVN/lazarus/components/synedit/syncompletion.pas"/>
+        <UnitName Value="SynCompletion"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="364"/>
+        <CursorPos X="3" Y="374"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit69>
+      <Unit70>
+        <Filename Value="../../../Lazarus-SVN/lazarus/ide/toolbarconfig.pas"/>
+        <ComponentName Value="ToolBarConfig"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ToolbarConfig"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="454"/>
+        <CursorPos X="23" Y="460"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit70>
+      <Unit71>
+        <Filename Value="../../DEBIO_WEB_DSN/dufrmmain.pp"/>
+        <UnitName Value="dufrmMain"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit71>
+      <Unit72>
+        <Filename Value="../../SRC_INC/Pascal/uib-master/source/uibdataset.pas"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="70"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit72>
+      <Unit73>
+        <Filename Value="../../SRC_INC/Pascal/uib-master/source/uibavl.pas"/>
+        <EditorIndex Value="14"/>
+        <TopLine Value="109"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit73>
+      <Unit74>
+        <Filename Value="../../SRC_INC/Pascal/uib-master/source/registeruib.pp"/>
+        <EditorIndex Value="15"/>
+        <TopLine Value="25"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit74>
+      <Unit75>
+        <Filename Value="../../SRC_INC/Pascal/uib-master/source/registeruib.lrs"/>
+        <EditorIndex Value="16"/>
+        <TopLine Value="229"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit75>
+    </Units>
+    <JumpHistory Count="8" HistoryIndex="7">
+      <Position1>
+        <Filename Value="Frames/duframframe.pp"/>
+        <Caret Line="36" Column="35" TopLine="20"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Frames/duframtable.pp"/>
+        <Caret Line="266" Column="34" TopLine="257"/>
+      </Position2>
+      <Position3>
+        <Filename Value="Dialogs/dufrmsettings.pp"/>
+        <Caret Line="894" TopLine="879"/>
+      </Position3>
+      <Position4>
+        <Filename Value="dudsqlnodes.pp"/>
+        <Caret Line="2312" Column="22" TopLine="2204"/>
+      </Position4>
+      <Position5>
+        <Filename Value="dudsqlnodes.pp"/>
+        <Caret Line="2166" Column="27" TopLine="2152"/>
+      </Position5>
+      <Position6>
+        <Filename Value="dudsqlnodes.pp"/>
+        <Caret Line="171" Column="30" TopLine="165"/>
+      </Position6>
+      <Position7>
+        <Filename Value="dudsqlnodes.pp"/>
+        <Caret Line="2007" Column="3" TopLine="2014"/>
+      </Position7>
+      <Position8>
+        <Filename Value="duconsts.pp"/>
+        <Caret Line="544" Column="3" TopLine="528"/>
+      </Position8>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="Dialogs/dufrmsettings.pp"/>
+        <Line Value="430"/>
+      </Item1>
+    </BreakPoints>
+    <Watches Count="2">
+      <Item1>
+        <Expression Value="fowner"/>
+      </Item1>
+      <Item2>
+        <Expression Value="Self"/>
+      </Item2>
+    </Watches>
+  </Debugging>
+</CONFIG>

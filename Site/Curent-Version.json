@@ -1,0 +1,25 @@
+{
+  Title: "Current version",
+  Info : "Version 0.8",
+  Targets: ["Linux x86_64 Gtk2", "Linux x86_64 Qt4", "Win64", "Win32"],
+  ReleaseInfoURL: "", 
+  ReleaseFolderURL: "https://sourceforge.net/projects/debio-sql/files/Release%200.8/",
+  TargetURLs:[
+    {
+      Title: "Linux x86_64 Gtk2",
+      URL: "https://sourceforge.net/projects/debio-sql/files/Release%200.8/DSql-0_8-Linux-x86_64-Gtk2.7z/download",
+    },
+    {
+      Title: "Linux x86_64 Qt4",
+      URL: "https://sourceforge.net/projects/debio-sql/files/Release%200.8/DSql-0_8-Linux-x86_64-Qt4.7z/download",
+    },
+    {
+      Title: "Win64",
+      URL: "https://sourceforge.net/projects/debio-sql/files/Release%200.8/DSql-0_8-Win64.7z/download",
+    },
+    {
+      Title: "Win32",
+      URL: "https://sourceforge.net/projects/debio-sql/files/Release%200.8/DSql-0_8-Win32.7z/download",
+    }
+  ]
+}

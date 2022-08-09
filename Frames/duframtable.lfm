@@ -1,0 +1,989 @@
+inherited dframTable: TdframTable
+  Height = 445
+  Width = 1126
+  HorzScrollBar.Page = 1
+  VertScrollBar.Page = 1
+  ClientHeight = 445
+  ClientWidth = 1126
+  Color = clForm
+  ParentColor = False
+  DesignTop = 24
+  inherited pnlStatusbar: TPanel
+    Top = 427
+    Width = 1126
+    ClientWidth = 1126
+    Color = clForm
+    ParentColor = False
+    inherited Shape2: TShape
+      Width = 1126
+    end
+    inherited stInfo: TStaticText
+      Left = 996
+    end
+    inherited stCrtPos: TLabel
+      Left = 987
+    end
+  end
+  object Panel2: TPanel[1]
+    Left = 0
+    Height = 405
+    Top = 22
+    Width = 1126
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 405
+    ClientWidth = 1126
+    TabOrder = 1
+    object PageControl1: TPageControl
+      Left = 0
+      Height = 405
+      Top = 0
+      Width = 1126
+      ActivePage = TabSheet5
+      Align = alClient
+      TabIndex = 1
+      TabOrder = 0
+      Options = [nboHidePageListPopup]
+      object TabSheet1: TTabSheet
+        Caption = 'Fields'
+        ClientHeight = 371
+        ClientWidth = 1116
+        object sgFields: TStringGrid
+          Left = 0
+          Height = 345
+          Top = 26
+          Width = 1116
+          Align = alClient
+          AlternateColor = clForm
+          BorderStyle = bsNone
+          ColCount = 16
+          Columns = <          
+            item
+              ReadOnly = True
+              Title.Alignment = taCenter
+              Title.Caption = '#'
+              Width = 35
+            end          
+            item
+              ButtonStyle = cbsCheckboxColumn
+              Title.Caption = 'PK'
+              Width = 24
+            end          
+            item
+              ButtonStyle = cbsCheckboxColumn
+              Title.Caption = 'FK'
+              Width = 24
+            end          
+            item
+              Title.Alignment = taCenter
+              Title.Caption = 'Name'
+              Width = 196
+            end          
+            item
+              ButtonStyle = cbsPickList
+              Title.Alignment = taCenter
+              Title.Caption = 'Type'
+              Width = 150
+            end          
+            item
+              ButtonStyle = cbsPickList
+              Title.Alignment = taCenter
+              Title.Caption = 'Charset'
+              Width = 80
+            end          
+            item
+              ButtonStyle = cbsPickList
+              Title.Alignment = taCenter
+              Title.Caption = 'Collation'
+              Width = 80
+            end          
+            item
+              Title.Alignment = taCenter
+              Title.Caption = 'Size'
+              Width = 45
+            end          
+            item
+              Title.Alignment = taCenter
+              Title.Caption = 'Scale'
+              Width = 45
+            end          
+            item
+              ButtonStyle = cbsCheckboxColumn
+              Title.Alignment = taCenter
+              Title.Caption = 'AI'
+              Width = 24
+            end          
+            item
+              ButtonStyle = cbsCheckboxColumn
+              Title.Alignment = taCenter
+              Title.Caption = 'NN'
+              Width = 24
+            end          
+            item
+              ButtonStyle = cbsCheckboxColumn
+              Title.Alignment = taCenter
+              Title.Caption = 'U'
+              Width = 24
+            end          
+            item
+              Title.Alignment = taCenter
+              Title.Caption = 'Default'
+              Width = 64
+            end          
+            item
+              Title.Alignment = taCenter
+              Title.Caption = 'Check'
+              Width = 64
+            end          
+            item
+              Title.Alignment = taCenter
+              Title.Caption = 'Computed'
+              Width = 64
+            end          
+            item
+              Title.Alignment = taCenter
+              Title.Caption = 'Comment'
+              Width = 150
+            end>
+          ExtendedSelect = False
+          FixedCols = 0
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goAutoAddRows, goSmoothScroll, goSelectionActive]
+          RowCount = 2
+          TabOrder = 0
+          TitleStyle = tsStandard
+          OnCheckboxToggled = sgFieldsCheckboxToggled
+          OnColRowInserted = sgFieldsColRowInserted
+          OnEditingDone = sgFieldsEditingDone
+          OnSelection = sgFieldsSelection
+          OnSetCheckboxState = sgFieldsSetCheckboxState
+          OnValidateEntry = sgFieldsValidateEntry
+          ColWidths = (
+            35
+            24
+            24
+            196
+            150
+            80
+            80
+            45
+            45
+            24
+            24
+            24
+            64
+            64
+            64
+            150
+          )
+          Cells = (
+            5
+            1
+            1
+            '0'
+            2
+            1
+            '0'
+            9
+            1
+            '0'
+            10
+            1
+            '0'
+            11
+            1
+            '0'
+          )
+        end
+        object ToolBar1: TToolBar
+          Left = 0
+          Height = 26
+          Top = 0
+          Width = 1116
+          ButtonHeight = 24
+          ButtonWidth = 24
+          Caption = 'ToolBar1'
+          EdgeBorders = [ebBottom]
+          Images = dmMainModule.ilActions
+          TabOrder = 1
+          object btnMoveColUp: TToolButton
+            Left = 1
+            Top = 0
+            Caption = 'Move Column Up'
+            Enabled = False
+            ImageIndex = 9
+            OnClick = btnMoveColUpClick
+          end
+          object btnMoveColDown: TToolButton
+            Left = 25
+            Top = 0
+            Caption = 'Move Column Down'
+            Enabled = False
+            ImageIndex = 10
+            OnClick = btnMoveColDownClick
+          end
+          object ToolButton3: TToolButton
+            Left = 49
+            Top = 0
+            Caption = 'ToolButton3'
+            Enabled = False
+            ImageIndex = 12
+          end
+          object ToolButton4: TToolButton
+            Left = 73
+            Top = 0
+            Caption = 'ToolButton4'
+            Enabled = False
+            ImageIndex = 11
+          end
+        end
+      end
+      object TabSheet5: TTabSheet
+        Caption = 'Constraints'
+        ClientHeight = 378
+        ClientWidth = 1122
+        Enabled = False
+        object sgFields2: TStringGrid
+          Left = 0
+          Height = 351
+          Top = 27
+          Width = 1122
+          Align = alClient
+          AlternateColor = clForm
+          BorderStyle = bsNone
+          ColCount = 1
+          Columns = <          
+            item
+              Title.Caption = 'Title'
+            end>
+          FixedCols = 0
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goAutoAddRows, goSmoothScroll, goSelectionActive]
+          RowCount = 2
+          TabOrder = 0
+          TitleStyle = tsNative
+          OnColRowInserted = sgFieldsColRowInserted
+          OnSelection = sgFieldsSelection
+          OnSetCheckboxState = sgFieldsSetCheckboxState
+          OnValidateEntry = sgFieldsValidateEntry
+        end
+        object Shape3: TShape
+          Left = 0
+          Height = 1
+          Top = 0
+          Width = 1122
+          Align = alTop
+          Pen.Color = clBtnShadow
+        end
+        object ToolBar2: TToolBar
+          Left = 0
+          Height = 26
+          Top = 1
+          Width = 1122
+          ButtonHeight = 24
+          ButtonWidth = 24
+          Caption = 'ToolBar2'
+          EdgeBorders = [ebBottom]
+          Images = dmMainModule.ilActions
+          TabOrder = 1
+        end
+      end
+      object TabSheet2: TTabSheet
+        Caption = 'Primary Kies'
+        ClientHeight = 371
+        ClientWidth = 1116
+        object sgFields1: TStringGrid
+          Left = 0
+          Height = 349
+          Top = 27
+          Width = 1116
+          Align = alClient
+          AlternateColor = clForm
+          BorderStyle = bsNone
+          ColCount = 1
+          Columns = <          
+            item
+              Title.Caption = 'Title'
+            end>
+          FixedCols = 0
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goAutoAddRows, goSmoothScroll, goSelectionActive]
+          RowCount = 2
+          TabOrder = 0
+          TitleStyle = tsNative
+          OnColRowInserted = sgFieldsColRowInserted
+          OnSelection = sgFieldsSelection
+          OnSetCheckboxState = sgFieldsSetCheckboxState
+          OnValidateEntry = sgFieldsValidateEntry
+        end
+        object Shape4: TShape
+          Left = 0
+          Height = 1
+          Top = 0
+          Width = 1116
+          Align = alTop
+          Pen.Color = clBtnShadow
+        end
+        object ToolBar3: TToolBar
+          Left = 0
+          Height = 26
+          Top = 1
+          Width = 1116
+          ButtonHeight = 24
+          ButtonWidth = 24
+          Caption = 'ToolBar3'
+          EdgeBorders = [ebBottom]
+          Images = dmMainModule.ilActions
+          TabOrder = 1
+        end
+      end
+      object TabSheet3: TTabSheet
+        Caption = 'Foreing Kies'
+        ClientHeight = 371
+        ClientWidth = 1116
+        object sgFields3: TStringGrid
+          Left = 0
+          Height = 349
+          Top = 27
+          Width = 1116
+          Align = alClient
+          AlternateColor = clForm
+          BorderStyle = bsNone
+          ColCount = 1
+          Columns = <          
+            item
+              Title.Caption = 'Title'
+            end>
+          FixedCols = 0
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goAutoAddRows, goSmoothScroll, goSelectionActive]
+          RowCount = 2
+          TabOrder = 0
+          TitleStyle = tsNative
+          OnColRowInserted = sgFieldsColRowInserted
+          OnSelection = sgFieldsSelection
+          OnSetCheckboxState = sgFieldsSetCheckboxState
+          OnValidateEntry = sgFieldsValidateEntry
+        end
+        object Shape5: TShape
+          Left = 0
+          Height = 1
+          Top = 0
+          Width = 1116
+          Align = alTop
+          Pen.Color = clBtnShadow
+        end
+        object ToolBar4: TToolBar
+          Left = 0
+          Height = 26
+          Top = 1
+          Width = 1116
+          ButtonHeight = 24
+          ButtonWidth = 24
+          Caption = 'ToolBar4'
+          EdgeBorders = [ebBottom]
+          Images = dmMainModule.ilActions
+          TabOrder = 1
+        end
+      end
+      object TabSheet4: TTabSheet
+        Caption = 'DDL'
+        ClientHeight = 371
+        ClientWidth = 1116
+        inline synSqlEditor: TSynEdit
+          Cursor = crDefault
+          Left = 0
+          Height = 375
+          Top = 1
+          Width = 1116
+          Align = alClient
+          Color = 5391680
+          Font.CharSet = 4
+          Font.Height = -13
+          Font.Name = 'Ubuntu Mono'
+          Font.Pitch = fpFixed
+          Font.Quality = fqAntialiased
+          ParentColor = False
+          ParentFont = False
+          PopupMenu = dmMainModule.pmEditor
+          TabOrder = 0
+          BookMarkOptions.EnableKeys = False
+          BorderStyle = bsNone
+          Gutter.Color = 5391680
+          Gutter.Width = 55
+          Gutter.MouseActions = <>
+          RightGutter.Width = 0
+          RightGutter.MouseActions = <>
+          Highlighter = SynSQLSynMain
+          Keystrokes = <          
+            item
+              Command = ecUp
+              ShortCut = 38
+            end          
+            item
+              Command = ecSelUp
+              ShortCut = 8230
+            end          
+            item
+              Command = ecScrollUp
+              ShortCut = 16422
+            end          
+            item
+              Command = ecDown
+              ShortCut = 40
+            end          
+            item
+              Command = ecSelDown
+              ShortCut = 8232
+            end          
+            item
+              Command = ecScrollDown
+              ShortCut = 16424
+            end          
+            item
+              Command = ecLeft
+              ShortCut = 37
+            end          
+            item
+              Command = ecSelLeft
+              ShortCut = 8229
+            end          
+            item
+              Command = ecWordLeft
+              ShortCut = 16421
+            end          
+            item
+              Command = ecSelWordLeft
+              ShortCut = 24613
+            end          
+            item
+              Command = ecRight
+              ShortCut = 39
+            end          
+            item
+              Command = ecSelRight
+              ShortCut = 8231
+            end          
+            item
+              Command = ecWordRight
+              ShortCut = 16423
+            end          
+            item
+              Command = ecSelWordRight
+              ShortCut = 24615
+            end          
+            item
+              Command = ecPageDown
+              ShortCut = 34
+            end          
+            item
+              Command = ecSelPageDown
+              ShortCut = 8226
+            end          
+            item
+              Command = ecPageBottom
+              ShortCut = 16418
+            end          
+            item
+              Command = ecSelPageBottom
+              ShortCut = 24610
+            end          
+            item
+              Command = ecPageUp
+              ShortCut = 33
+            end          
+            item
+              Command = ecSelPageUp
+              ShortCut = 8225
+            end          
+            item
+              Command = ecPageTop
+              ShortCut = 16417
+            end          
+            item
+              Command = ecSelPageTop
+              ShortCut = 24609
+            end          
+            item
+              Command = ecLineStart
+              ShortCut = 36
+            end          
+            item
+              Command = ecSelLineStart
+              ShortCut = 8228
+            end          
+            item
+              Command = ecEditorTop
+              ShortCut = 16420
+            end          
+            item
+              Command = ecSelEditorTop
+              ShortCut = 24612
+            end          
+            item
+              Command = ecLineEnd
+              ShortCut = 35
+            end          
+            item
+              Command = ecSelLineEnd
+              ShortCut = 8227
+            end          
+            item
+              Command = ecEditorBottom
+              ShortCut = 16419
+            end          
+            item
+              Command = ecSelEditorBottom
+              ShortCut = 24611
+            end          
+            item
+              Command = ecToggleMode
+              ShortCut = 45
+            end          
+            item
+              Command = ecCopy
+              ShortCut = 16429
+            end          
+            item
+              Command = ecPaste
+              ShortCut = 8237
+            end          
+            item
+              Command = ecDeleteWord
+              ShortCut = 46
+            end          
+            item
+              Command = ecCut
+              ShortCut = 8238
+            end          
+            item
+              Command = ecDeleteLastChar
+              ShortCut = 8
+            end          
+            item
+              Command = ecDeleteLastChar
+              ShortCut = 8200
+            end          
+            item
+              Command = ecDeleteLastWord
+              ShortCut = 16392
+            end          
+            item
+              Command = ecUndo
+              ShortCut = 32776
+            end          
+            item
+              Command = ecRedo
+              ShortCut = 40968
+            end          
+            item
+              Command = ecLineBreak
+              ShortCut = 13
+            end          
+            item
+              Command = ecSelectAll
+              ShortCut = 16449
+            end          
+            item
+              Command = ecCopy
+              ShortCut = 16451
+            end          
+            item
+              Command = ecBlockIndent
+              ShortCut = 24649
+            end          
+            item
+              Command = ecLineBreak
+              ShortCut = 16461
+            end          
+            item
+              Command = ecInsertLine
+              ShortCut = 16462
+            end          
+            item
+              Command = ecDeleteWord
+              ShortCut = 16468
+            end          
+            item
+              Command = ecBlockUnindent
+              ShortCut = 24661
+            end          
+            item
+              Command = ecPaste
+              ShortCut = 16470
+            end          
+            item
+              Command = ecCut
+              ShortCut = 16472
+            end          
+            item
+              Command = ecDeleteLine
+              ShortCut = 16473
+            end          
+            item
+              Command = ecDeleteEOL
+              ShortCut = 24665
+            end          
+            item
+              Command = ecUndo
+              ShortCut = 16474
+            end          
+            item
+              Command = ecRedo
+              ShortCut = 24666
+            end          
+            item
+              Command = ecGotoMarker0
+              ShortCut = 16432
+            end          
+            item
+              Command = ecGotoMarker1
+              ShortCut = 16433
+            end          
+            item
+              Command = ecGotoMarker2
+              ShortCut = 16434
+            end          
+            item
+              Command = ecGotoMarker3
+              ShortCut = 16435
+            end          
+            item
+              Command = ecGotoMarker4
+              ShortCut = 16436
+            end          
+            item
+              Command = ecGotoMarker5
+              ShortCut = 16437
+            end          
+            item
+              Command = ecGotoMarker6
+              ShortCut = 16438
+            end          
+            item
+              Command = ecGotoMarker7
+              ShortCut = 16439
+            end          
+            item
+              Command = ecGotoMarker8
+              ShortCut = 16440
+            end          
+            item
+              Command = ecGotoMarker9
+              ShortCut = 16441
+            end          
+            item
+              Command = ecSetMarker0
+              ShortCut = 24624
+            end          
+            item
+              Command = ecSetMarker1
+              ShortCut = 24625
+            end          
+            item
+              Command = ecSetMarker2
+              ShortCut = 24626
+            end          
+            item
+              Command = ecSetMarker3
+              ShortCut = 24627
+            end          
+            item
+              Command = ecSetMarker4
+              ShortCut = 24628
+            end          
+            item
+              Command = ecSetMarker5
+              ShortCut = 24629
+            end          
+            item
+              Command = ecSetMarker6
+              ShortCut = 24630
+            end          
+            item
+              Command = ecSetMarker7
+              ShortCut = 24631
+            end          
+            item
+              Command = ecSetMarker8
+              ShortCut = 24632
+            end          
+            item
+              Command = ecSetMarker9
+              ShortCut = 24633
+            end          
+            item
+              Command = EcFoldLevel1
+              ShortCut = 41009
+            end          
+            item
+              Command = EcFoldLevel2
+              ShortCut = 41010
+            end          
+            item
+              Command = EcFoldLevel3
+              ShortCut = 41011
+            end          
+            item
+              Command = EcFoldLevel4
+              ShortCut = 41012
+            end          
+            item
+              Command = EcFoldLevel5
+              ShortCut = 41013
+            end          
+            item
+              Command = EcFoldLevel6
+              ShortCut = 41014
+            end          
+            item
+              Command = EcFoldLevel7
+              ShortCut = 41015
+            end          
+            item
+              Command = EcFoldLevel8
+              ShortCut = 41016
+            end          
+            item
+              Command = EcFoldLevel9
+              ShortCut = 41017
+            end          
+            item
+              Command = EcFoldLevel0
+              ShortCut = 41008
+            end          
+            item
+              Command = EcFoldCurrent
+              ShortCut = 41005
+            end          
+            item
+              Command = EcUnFoldCurrent
+              ShortCut = 41003
+            end          
+            item
+              Command = EcToggleMarkupWord
+              ShortCut = 32845
+            end          
+            item
+              Command = ecNormalSelect
+              ShortCut = 24654
+            end          
+            item
+              Command = ecColumnSelect
+              ShortCut = 24643
+            end          
+            item
+              Command = ecLineSelect
+              ShortCut = 24652
+            end          
+            item
+              Command = ecTab
+              ShortCut = 9
+            end          
+            item
+              Command = ecShiftTab
+              ShortCut = 8201
+            end          
+            item
+              Command = ecMatchBracket
+              ShortCut = 24642
+            end          
+            item
+              Command = ecColSelUp
+              ShortCut = 40998
+            end          
+            item
+              Command = ecColSelDown
+              ShortCut = 41000
+            end          
+            item
+              Command = ecColSelLeft
+              ShortCut = 40997
+            end          
+            item
+              Command = ecColSelRight
+              ShortCut = 40999
+            end          
+            item
+              Command = ecColSelPageDown
+              ShortCut = 40994
+            end          
+            item
+              Command = ecColSelPageBottom
+              ShortCut = 57378
+            end          
+            item
+              Command = ecColSelPageUp
+              ShortCut = 40993
+            end          
+            item
+              Command = ecColSelPageTop
+              ShortCut = 57377
+            end          
+            item
+              Command = ecColSelLineStart
+              ShortCut = 40996
+            end          
+            item
+              Command = ecColSelLineEnd
+              ShortCut = 40995
+            end          
+            item
+              Command = ecColSelEditorTop
+              ShortCut = 57380
+            end          
+            item
+              Command = ecColSelEditorBottom
+              ShortCut = 57379
+            end          
+            item
+              Command = ecDeleteWord
+              ShortCut = 16430
+            end>
+          MouseActions = <>
+          MouseTextActions = <>
+          MouseSelActions = <>
+          Options = [eoAutoIndent, eoBracketHighlight, eoGroupUndo, eoScrollPastEol, eoTabIndent, eoTabsToSpaces, eoTrimTrailingSpaces, eoDragDropEditing]
+          MouseOptions = [emDragDropEditing]
+          VisibleSpecialChars = [vscSpace, vscTabAtLast]
+          ReadOnly = True
+          SelectedColor.BackPriority = 50
+          SelectedColor.ForePriority = 50
+          SelectedColor.FramePriority = 50
+          SelectedColor.BoldPriority = 50
+          SelectedColor.ItalicPriority = 50
+          SelectedColor.UnderlinePriority = 50
+          SelectedColor.StrikeOutPriority = 50
+          BracketHighlightStyle = sbhsBoth
+          BracketMatchColor.Background = clNone
+          BracketMatchColor.Foreground = clNone
+          BracketMatchColor.Style = [fsBold]
+          FoldedCodeColor.Background = clNone
+          FoldedCodeColor.Foreground = clGray
+          FoldedCodeColor.FrameColor = clGray
+          MouseLinkColor.Background = clNone
+          MouseLinkColor.Foreground = clBlue
+          LineHighlightColor.Background = 4210752
+          LineHighlightColor.Foreground = clNone
+          TabWidth = 2
+          inline SynLeftGutterPartList1: TSynGutterPartList
+            object SynGutterMarks1: TSynGutterMarks
+              Width = 24
+              MouseActions = <>
+            end
+            object SynGutterLineNumber1: TSynGutterLineNumber
+              Width = 15
+              MouseActions = <>
+              MarkupInfo.Background = 5391680
+              MarkupInfo.Foreground = 7039851
+              DigitCount = 2
+              ShowOnlyLineNumbersMultiplesOf = 5
+              ZeroStart = False
+              LeadingZeros = False
+            end
+            object SynGutterChanges1: TSynGutterChanges
+              Width = 4
+              MouseActions = <>
+              ModifiedColor = 59900
+              SavedColor = clGreen
+            end
+            object SynGutterSeparator1: TSynGutterSeparator
+              Width = 2
+              MouseActions = <>
+              MarkupInfo.Background = 5391680
+              MarkupInfo.Foreground = clGray
+            end
+            object SynGutterCodeFolding1: TSynGutterCodeFolding
+              MouseActions = <>
+              MarkupInfo.Background = 5391680
+              MarkupInfo.Foreground = clGray
+              MouseActionsExpanded = <>
+              MouseActionsCollapsed = <>
+            end
+          end
+        end
+        object Shape6: TShape
+          Left = 0
+          Height = 1
+          Top = 0
+          Width = 1116
+          Align = alTop
+          Pen.Color = clBtnShadow
+        end
+      end
+    end
+  end
+  object pnlToolbar: TPanel[2]
+    Left = 0
+    Height = 22
+    Top = 0
+    Width = 1126
+    Align = alTop
+    AutoSize = True
+    ClientHeight = 22
+    ClientWidth = 1126
+    Color = clForm
+    ParentColor = False
+    TabOrder = 2
+    object Label2: TLabel
+      Left = 6
+      Height = 20
+      Top = 1
+      Width = 74
+      Align = alLeft
+      BorderSpacing.Left = 5
+      Caption = 'Table Name :'
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object edTblName: TEdit
+      Left = 85
+      Height = 20
+      Top = 1
+      Width = 225
+      Align = alLeft
+      BorderSpacing.Left = 5
+      BorderSpacing.CellAlignHorizontal = ccaCenter
+      OnChange = edTblNameChange
+      OnExit = edTblNameExit
+      TabOrder = 0
+      TextHint = 'Table Name'
+    end
+    object Label3: TLabel
+      Left = 313
+      Height = 20
+      Top = 1
+      Width = 759
+      Align = alLeft
+      BorderSpacing.Left = 3
+      Caption = 'For name of the Table, Columns, Constraints souround them by " if you whant theme in case sensitive other wise put them as uppercase.'
+      Color = clInfoBk
+      Font.Color = clInfoText
+      Layout = tlCenter
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+    end
+  end
+  object SynSQLSynMain: TSynSQLSyn[3]
+    DefaultFilter = 'SQL Files (*.sql)|*.sql'
+    Enabled = False
+    CommentAttri.Foreground = 7994962
+    DataTypeAttri.Foreground = 8506880
+    DefaultPackageAttri.Foreground = clGray
+    FunctionAttri.Foreground = 3899381
+    IdentifierAttri.Foreground = 16752918
+    KeyAttri.Foreground = 2323711
+    KeyAttri.Style = []
+    NumberAttri.Foreground = 5858303
+    PLSQLAttri.Foreground = 50943
+    SQLPlusAttri.Foreground = clRed
+    StringAttri.Foreground = 5858303
+    SymbolAttri.Foreground = 5217023
+    TableNameAttri.Foreground = 5962745
+    TableNameAttri.Style = [fsItalic]
+    TableNames.Strings = (
+      ''
+    )
+    VariableAttri.Foreground = 6908314
+    SQLDialect = sqlInterbase6
+    Left = 444
+    Top = 92
+  end
+end

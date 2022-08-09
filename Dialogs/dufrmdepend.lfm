@@ -1,0 +1,104 @@
+object FrmDepend: TFrmDepend
+  Left = 3478
+  Height = 514
+  Top = 171
+  Width = 620
+  Caption = 'Object Depend'
+  ClientHeight = 514
+  ClientWidth = 620
+  DesignTimePPI = 91
+  LCLVersion = '1.9.0.0'
+  object lblObject: TLabel
+    Left = 8
+    Height = 12
+    Top = 8
+    Width = 604
+    Align = alTop
+    Alignment = taCenter
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BorderSpacing.Bottom = 8
+    Caption = 'The Object'
+    ParentColor = False
+    ParentFont = False
+  end
+  object PairSplitter1: TPairSplitter
+    Left = 0
+    Height = 486
+    Top = 28
+    Width = 620
+    Align = alClient
+    Position = 311
+    object PairSplitterSide1: TPairSplitterSide
+      Cursor = crArrow
+      Left = 0
+      Height = 486
+      Top = 0
+      Width = 311
+      ClientWidth = 311
+      ClientHeight = 486
+      object lblObject1: TLabel
+        Left = 8
+        Height = 12
+        Top = 8
+        Width = 295
+        Align = alTop
+        Alignment = taCenter
+        BorderSpacing.Left = 8
+        BorderSpacing.Top = 8
+        BorderSpacing.Right = 8
+        BorderSpacing.Bottom = 8
+        Caption = 'Dependencies'
+        ParentColor = False
+        ParentFont = False
+      end
+      object tvDependencies: TTreeView
+        Left = 0
+        Height = 458
+        Top = 28
+        Width = 311
+        Align = alClient
+        BorderStyle = bsNone
+        Images = dmMainModule.ilMainTree
+        ParentFont = False
+        TabOrder = 0
+      end
+    end
+    object PairSplitterSide2: TPairSplitterSide
+      Cursor = crArrow
+      Left = 316
+      Height = 486
+      Top = 0
+      Width = 304
+      ClientWidth = 304
+      ClientHeight = 486
+      object lblObject2: TLabel
+        Left = 8
+        Height = 12
+        Top = 8
+        Width = 288
+        Align = alTop
+        Alignment = taCenter
+        BorderSpacing.Left = 8
+        BorderSpacing.Top = 8
+        BorderSpacing.Right = 8
+        BorderSpacing.Bottom = 8
+        Caption = 'Required By'
+        ParentColor = False
+        ParentFont = False
+      end
+      object tvRequiredBy: TTreeView
+        Left = 0
+        Height = 458
+        Top = 28
+        Width = 304
+        Align = alClient
+        BorderStyle = bsNone
+        Images = dmMainModule.ilMainTree
+        ParentFont = False
+        TabOrder = 0
+      end
+    end
+  end
+end

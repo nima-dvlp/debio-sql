@@ -1,0 +1,287 @@
+object DFrmCreateDatbase: TDFrmCreateDatbase
+  Left = 2035
+  Height = 228
+  Top = 199
+  Width = 507
+  Caption = 'Create Database'
+  ClientHeight = 228
+  ClientWidth = 507
+  DesignTimePPI = 91
+  OnCloseQuery = FormCloseQuery
+  Position = poMainFormCenter
+  LCLVersion = '1.9.0.0'
+  object pnlServerTitle: TPanel
+    Left = 8
+    Height = 22
+    Top = 0
+    Width = 491
+    Align = alTop
+    Alignment = taLeftJustify
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    BevelOuter = bvNone
+    Caption = 'Database alias(For register here)'
+    ClientHeight = 22
+    ClientWidth = 491
+    Color = clForm
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+    object edAlias: TEdit
+      Left = 175
+      Height = 22
+      Top = 0
+      Width = 316
+      Align = alClient
+      BorderSpacing.Left = 175
+      ParentFont = False
+      TabOrder = 0
+      TextHint = 'Database Alias'
+    end
+  end
+  object pnlClientLibrary: TPanel
+    Left = 8
+    Height = 22
+    Top = 30
+    Width = 491
+    Align = alTop
+    Alignment = taLeftJustify
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelOuter = bvNone
+    Caption = 'Database file name'
+    ClientHeight = 22
+    ClientWidth = 491
+    Color = clForm
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 1
+    object feDatabase: TFileNameEdit
+      Left = 175
+      Height = 22
+      Top = 0
+      Width = 316
+      DialogTitle = 'Locate the client/embedded library'
+      Filter = 'Firebird Database|*.fdb'
+      FilterIndex = 0
+      HideDirectories = False
+      ButtonWidth = 23
+      NumGlyphs = 1
+      Align = alClient
+      BorderSpacing.Left = 175
+      AutoSize = False
+      MaxLength = 0
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+  object pnlServerTitle1: TPanel
+    Left = 8
+    Height = 25
+    Top = 60
+    Width = 491
+    Align = alTop
+    Alignment = taLeftJustify
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelOuter = bvNone
+    Caption = 'Page size'
+    ClientHeight = 25
+    ClientWidth = 491
+    Color = clForm
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 2
+    object cbPageSize: TComboBox
+      Left = 175
+      Height = 25
+      Top = 0
+      Width = 316
+      Align = alClient
+      BorderSpacing.Left = 175
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        '4096'
+        '8192'
+        '16384'
+      )
+      ParentFont = False
+      Style = csDropDownList
+      TabOrder = 0
+      Text = '4096'
+    end
+  end
+  object pnlServerTitle2: TPanel
+    Left = 8
+    Height = 25
+    Top = 93
+    Width = 491
+    Align = alTop
+    Alignment = taLeftJustify
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelOuter = bvNone
+    Caption = 'Character set'
+    ClientHeight = 25
+    ClientWidth = 491
+    Color = clForm
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 3
+    object cbCharacterSet: TComboBox
+      Left = 175
+      Height = 25
+      Top = 0
+      Width = 316
+      Align = alClient
+      BorderSpacing.Left = 175
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'NONE'
+        'ASCII'
+        'BIG_5'
+        'CYRL'
+        'DOS437'
+        'DOS850'
+        'DOS852'
+        'DOS857'
+        'DOS860'
+        'DOS861'
+        'DOS863'
+        'DOS865'
+        'EUCJ_0208'
+        'GB_2312'
+        'ISO8859_1'
+        'ISO8859_2'
+        'KSC_5601'
+        'NEXT'
+        'OCTETS'
+        'SJIS_0208'
+        'UNICODE_FSS'
+        'UTF8'
+        'WIN1250'
+        'WIN1251'
+        'WIN1252'
+        'WIN1253'
+        'WIN125'
+        'sDOS737'
+        'DOS775'
+        'DOS858'
+        'DOS862'
+        'DOS864'
+        'DOS866'
+        'DOS869'
+        'WIN1255'
+        'WIN1256'
+        'WIN1257'
+        'ISO8859_3'
+        'ISO8859_4'
+        'ISO8859_5'
+        'ISO8859_6'
+        'ISO8859_7'
+        'ISO8859_8'
+        'ISO8859_9'
+        'ISO8859_13'
+      )
+      ParentFont = False
+      Style = csDropDownList
+      TabOrder = 0
+      Text = 'NONE'
+    end
+  end
+  object pnlServerTitle3: TPanel
+    Left = 8
+    Height = 22
+    Top = 126
+    Width = 491
+    Align = alTop
+    Alignment = taLeftJustify
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelOuter = bvNone
+    Caption = 'User Name'
+    ClientHeight = 22
+    ClientWidth = 491
+    Color = clForm
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 4
+    object edUserName: TEdit
+      Left = 175
+      Height = 22
+      Top = 0
+      Width = 316
+      Align = alClient
+      BorderSpacing.Left = 175
+      ParentFont = False
+      TabOrder = 0
+      TextHint = 'User name'
+    end
+  end
+  object pnlServerTitle4: TPanel
+    Left = 8
+    Height = 22
+    Top = 156
+    Width = 491
+    Align = alTop
+    Alignment = taLeftJustify
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelOuter = bvNone
+    Caption = 'Password'
+    ClientHeight = 22
+    ClientWidth = 491
+    Color = clForm
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 5
+    object edPassword: TEdit
+      Left = 175
+      Height = 22
+      Top = 0
+      Width = 316
+      Align = alClient
+      BorderSpacing.Left = 175
+      EchoMode = emPassword
+      ParentFont = False
+      PasswordChar = '*'
+      TabOrder = 0
+      TextHint = 'Password'
+    end
+  end
+  object ButtonPanel1: TButtonPanel
+    Left = 8
+    Height = 36
+    Top = 187
+    Width = 491
+    AutoSize = False
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    BorderSpacing.Bottom = 5
+    BorderSpacing.Around = 0
+    OKButton.Name = 'OKButton'
+    OKButton.DefaultCaption = True
+    OKButton.OnClick = OKButtonClick
+    HelpButton.Name = 'HelpButton'
+    HelpButton.DefaultCaption = True
+    CloseButton.Name = 'CloseButton'
+    CloseButton.DefaultCaption = True
+    CancelButton.Name = 'CancelButton'
+    CancelButton.DefaultCaption = True
+    TabOrder = 6
+    ShowButtons = [pbOK, pbCancel]
+  end
+end

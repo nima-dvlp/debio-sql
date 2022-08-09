@@ -1,0 +1,9 @@
+inherited FrmEditorWindow: TFrmEditorWindow
+  Left = 3484
+  Height = 490
+  Width = 614
+  Caption = 'Doing'
+  OnCloseQuery = FormCloseQuery
+  OnShow = FormShow
+  Position = poMainFormCenter
+end

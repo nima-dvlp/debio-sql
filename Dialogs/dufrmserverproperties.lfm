@@ -1,0 +1,548 @@
+object FrmServerProperties: TFrmServerProperties
+  Left = 2284
+  Height = 396
+  Top = 120
+  Width = 477
+  ActiveControl = pnlEmbeded
+  AutoSize = True
+  BorderStyle = bsDialog
+  Caption = 'Server Properties - New'
+  ClientHeight = 396
+  ClientWidth = 477
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object ButtonPanel1: TButtonPanel
+    Left = 8
+    Height = 38
+    Top = 353
+    Width = 461
+    AutoSize = False
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    BorderSpacing.Bottom = 5
+    BorderSpacing.Around = 0
+    OKButton.Name = 'OKButton'
+    OKButton.DefaultCaption = True
+    HelpButton.Name = 'HelpButton'
+    HelpButton.DefaultCaption = True
+    CloseButton.Name = 'CloseButton'
+    CloseButton.DefaultCaption = True
+    CancelButton.Name = 'CancelButton'
+    CancelButton.DefaultCaption = True
+    TabOrder = 1
+    ShowButtons = [pbOK, pbCancel]
+  end
+  object pnlEmbeded: TPanel
+    Left = 0
+    Height = 353
+    Top = 0
+    Width = 477
+    Align = alClient
+    AutoSize = True
+    BorderSpacing.InnerBorder = 8
+    BevelColor = clBtnShadow
+    BevelOuter = bvNone
+    ClientHeight = 353
+    ClientWidth = 477
+    ParentFont = False
+    TabOrder = 0
+    object Image2: TImage
+      Left = 0
+      Height = 32
+      Top = 0
+      Width = 32
+      AutoSize = True
+      Center = True
+      Picture.Data = {
+        1754506F727461626C654E6574776F726B477261706869639106000089504E47
+        0D0A1A0A0000000D4948445200000020000000200806000001047D4A62000000
+        06624B474400FF00FF00FFA0BDA793000000097048597300000B1300000B1301
+        009A9C180000000774494D4507E20402130B30139C8A2C0000061E4944415458
+        C3ED965F6C15591DC73FE7CC99993BF7DE5E0A052CCB5DE5A6B5257405DCB2C4
+        648D81107557565F0C6FCA1B829187551248FC97A8A4460C51960737EA030481
+        44822F069BDA8420BBE0863F1B889BA67657484D691B4A5A6EB9B7D39933738E
+        0F977BE12E16B2BB66E303DFE4649233BFF99EEFF9CDEF1FBC0FA2BBBBBB65EF
+        9EEFCE02F4AC5D8F2A97CBE20FE10B3CD3D1C167BD1BC8C9C9C9D98DE37F7CF3
+        F82BADE2F4E9D33C02F1FBDFFEC60A045BBEF412939393A863B3CFB3E813CB79
+        717E9E344D1100030303F6FCF9F3BCDBFD2E4F8428954A2D6B7FD03F2B1EDA3C
+        FCE51C972F5FA6A7A707D1D2D2B2E8ECD9B377B3D92C4A29C230240C43AAD590
+        C58B17F131408C8C8CD837CE9D6D6C586BE959BB1E21044992A09224E1CF72D3
+        0303049F5F6C191A1A62DDBA75C8300C999A9E66DE18DCD65696747432357587
+        55AB56512E9711172E5CB0B95C8E6C364B922454E7AADC9D994788886C364BC3
+        3F030303F6C891237F3A75EAD4CD7DFBF6ED010882E0E370C3F6EDDBBD73E7CE
+        3DF738A352A9F4F5BEBEBEEFAF5EBD1A2144D33B75F1E2457F7070F0EACFDF69
+        4520FE2B81054AA584898909B2D92C0061181204012A8A22114511636363602D
+        954A0503789E87E7FB7841809BCB333F9F70EBD6AD26054992A0AAD5AA08C310
+        27BF04DFF759FCC94FE16732B87E06C753380E0817AAD57770DD00292D60C9E7
+        F3186310DDDDDD85DEDEDE5F08211042D0D9D9B9AA542ABD0470E5CA95A33333
+        33E1F8D8F8A695CFAE5C2DA56C2898989860E5CA958F5E7AC3860DAFCECDCD59
+        807C3E2F2E5DBAF41721C4CF788A8523B1B7B7F7F9A9A9A9C71A9D3C79F2AAE7
+        7974747434EDEFD8B163973A7CF8F0EB23FF1C7E21D5F18204FF7AEF3D96B4B5
+        91A669D37E9224522549227E7962908DBB0E2D4870FEA75FE3B5BE1FB17CF9F2
+        46180368AD1DA5B516589899995E90C0711C8C315CBB760D809E9E1E00A22892
+        4A6B2DA4E350A95488E398F928C2510ACFF7713319FC4C063F08989D9D65D9B2
+        65008C8E8ED6091C15C731AEEF530D433CCFA3B064095E10E007412D273219EE
+        E4F2586B59BA7469D315A228522A8E63E9055916AF78063F9BC5CF646AA7FB19
+        1C57200478990C51A429972B0861B879F3E603055A6BF1DA9E6FA25419A5AAB8
+        AE8B94126B2D5A6BE23826FDE1F778FBEDEBA4A905523A3B3BEB099553C78F1F
+        1F28140A7FAF67DAD6AD5B77596B915272E6CC99D78D31082176552A15DE7AEB
+        0200E5721980E9E9E9154DD9D8DEDEDE7AECD8B119630C4A29B66CD99201A2FD
+        FBF7DBFABDEB7F05A0AFAFEF6013412693D9D1D1D19135C620A564787878D618
+        D302BCF83469FF8FCBC9FF8A68DBB66D5F05567CC0CF2644575757CB89132706
+        4BA5D2868F22C05A2B84105208C1F5EBD729168B8F74E187110401BB77EFFEB6
+        B2D61245919C9E9E765EFEC677E87A79C7FD5EFC015D291CFE71E2275CFADB5F
+        6B0D57298686869A6CEA55AC0EADB554C618922411699AE217DA58F4E98D1FCE
+        0308BC204F9AA6DCBB778FD1D151F2F97C934DBD0AD6A782388E6BB5288E6391
+        2409209899B9DBF08010026B2DC6985A5DD21A93A6186B41081CA5504AE17A1E
+        8EEBA15C17AD35D6D62687FA1C53C7C3D52408829A80FB4A449224B89E4F9226
+        1863989B9BC3588BE3388DE50701D2751B073B4AE1B82E8EEBA2FC803BF93C5A
+        6BD234C5719C4603A963CD9A354DC36C144535015A6BA1B5C6715D746A908E24
+        DFDA5A23560A79FFE9288572DD9A20A5908E83540A29254EC621C866D15A1386
+        F394CB158AC5679BE269787898B1B1318AC5229D9D9D3501511489388E659224
+        B8F76E61AE1EC70A811192440AE2FB3317422044ADE20B01BC3FC2A5830CCB68
+        AD89A2842401290D601A228AC52285428142A140922494CB655FC5718CB5D695
+        5272A8EFC78D7F5F5FB76FDFC675DD865BEBCF388E696F6FC71883B5966139CC
+        52F339E238666464A872E8D0C17F3F29706FDCB8F1DC130BD1CE9D3BCF6CDAB4
+        E92BD63E70A59492A3478FFEAEBFBFFF5B8D495BA95FEDDDBBF7D5288A16E41A
+        1F1F6764CF085D07BB28954A1C3870E0D7EA7187E772B92FF6F6F6AEEFEAEAC2
+        75DD8627B4D66CDEBCF90BFDFDFD1B802B4288D5D6DA5C3E9FC7F7FD05F9DADA
+        DAD8F8C646C2CF84F540CC7DD4521C0059C07FDAD53E2CFE031746B3D4BC31CE
+        DF0000000049454E44AE426082
+      }
+      Visible = False
+    end
+    object Label1: TLabel
+      Left = 8
+      Height = 1
+      Top = 45
+      Width = 469
+      Align = alTop
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 8
+      ParentColor = False
+      ParentFont = False
+    end
+    object pnlServerTitle: TPanel
+      Left = 8
+      Height = 27
+      Top = 46
+      Width = 461
+      Align = alTop
+      Alignment = taLeftJustify
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Right = 8
+      BevelOuter = bvNone
+      Caption = 'Server/Computer Title'
+      ClientHeight = 27
+      ClientWidth = 461
+      Color = clForm
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 1
+      object edTitle: TEdit
+        Left = 132
+        Height = 27
+        Top = 0
+        Width = 329
+        Align = alClient
+        BorderSpacing.Left = 132
+        ParentFont = False
+        TabOrder = 0
+        TextHint = 'Server Alias'
+      end
+    end
+    object pnlServerAddress: TPanel
+      Left = 8
+      Height = 27
+      Top = 82
+      Width = 461
+      Align = alTop
+      Alignment = taLeftJustify
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 8
+      BevelOuter = bvNone
+      Caption = 'Server Address'
+      ClientHeight = 27
+      ClientWidth = 461
+      Color = clForm
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 2
+      object edAddress: TEdit
+        Left = 132
+        Height = 27
+        Top = 0
+        Width = 329
+        Align = alClient
+        AutoSize = False
+        BorderSpacing.Left = 132
+        ParentFont = False
+        TabOrder = 0
+        TextHint = 'IP/Address'
+      end
+    end
+    object pnlServerPort: TPanel
+      Left = 8
+      Height = 27
+      Top = 118
+      Width = 461
+      Align = alTop
+      Alignment = taLeftJustify
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 8
+      BevelOuter = bvNone
+      Caption = 'Port'
+      ClientHeight = 27
+      ClientWidth = 461
+      Color = clForm
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 3
+      object edPort: TEdit
+        Left = 132
+        Height = 27
+        Top = 0
+        Width = 329
+        Align = alClient
+        AutoSize = False
+        BorderSpacing.Left = 132
+        ParentFont = False
+        TabOrder = 0
+        TextHint = 'default 3050'
+      end
+    end
+    object Image1: TImage
+      Left = 0
+      Height = 35
+      Top = 37
+      Width = 33
+      Center = True
+      Picture.Data = {
+        1754506F727461626C654E6574776F726B477261706869639602000089504E47
+        0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000000
+        1974455874536F6674776172650041646F626520496D616765526561647971C9
+        653C000002384944415478DAB456C1AA1A31144DE268AB8B072E8AB6B8505019
+        F503E4D18DCBB7E9D29D5BA1FFD06FE8BEE027B82CFD84D22F7010DC3DC482F8
+        B0FAD4A93093F4DE381392793A9A9606C299B9C9BD27F7CC4D32540841FE6773
+        E2877EBFAF8C94D20F006F2D63FD84C57E8D5FC6E3B149A06702CFEF46A3D117
+        9BE8C3E1F0636A069C73DD4E9170BD5EDF143C9FCFA33FB52298CD6637AF3E08
+        82EB0461181A04B55A8DF8BEAF0C93C9C470EC743AEA399BCDA2BF55060CDFF7
+        FBBD32B45A2DC3511F8B2462A904986652A25B4B187DA1DB4954AD566F96C871
+        9CEB12250818BEEF763B65705DD770D4C75022986F2F914D15D94AC450A2C3E1
+        A00C9EE7198EED763B5945561944122181382B51B28AC09F597D642CD3201070
+        2EC9C303C8F68A0CDB62B120F3F99C542A1552AFD72F7E6496D031EE721FE0E6
+        445ECE05A09078B2735961BD5E4FE2693101D363BCC8404F19653D056272D594
+        62E7B02FB8CAA2D16890E5722931DA94D95489B6DBAD6ECFA1931048C0A31396
+        44C14F1D3761A95492858073C13F974AB05AAD747B7330187836C735F8375309
+        18338AE0B9DBEDB613E793D1369B8D5C7DA15020C562914CA7D31F570FBB4C26
+        A308CAE532391E8F170970ECF1D323697E6E129C0BB7E0F3B98A346E341C8848
+        425C19A5F422017EDCD00B25E67252FE300EAE1F928EEE1491B820D71D4A1639
+        9E6DB87BEF9FEE89FFDA8F7DEF40051770FAE26A8C2EFA22C01BC007C0F77FF9
+        13F11DE27D037C02FC9524C80314A0BFFAC73F95DFD00F101791FC116000982D
+        7CBAC7F2A46E0000000049454E44AE426082
+      }
+      Visible = False
+    end
+    object pnlLibraryPath: TPanel
+      Left = 8
+      Height = 75
+      Top = 190
+      Width = 461
+      Align = alTop
+      Alignment = taLeftJustify
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 8
+      BevelOuter = bvNone
+      Caption = 'Client ibrary path'
+      ClientHeight = 75
+      ClientWidth = 461
+      Color = clForm
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 5
+      object dePath: TDirectoryEdit
+        Left = 132
+        Height = 27
+        Top = 0
+        Width = 329
+        ShowHidden = False
+        ButtonWidth = 24
+        NumGlyphs = 1
+        Align = alClient
+        AutoSize = False
+        BorderSpacing.Left = 132
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 0
+      end
+      object Label2: TLabel
+        Left = 132
+        Height = 45
+        Top = 30
+        Width = 329
+        Align = alBottom
+        BorderSpacing.Left = 132
+        BorderSpacing.Top = 3
+        Caption = 'Firebird embedded root directory'#10'-This option set enviroment variables (Locally for DSql '#10'  at the RunTime) to  Embedded/Cllient library works fine'
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object pnlClientLibrary: TPanel
+      Left = 8
+      Height = 27
+      Top = 154
+      Width = 461
+      Align = alTop
+      Alignment = taLeftJustify
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 8
+      BevelOuter = bvNone
+      Caption = 'Client library'
+      ClientHeight = 27
+      ClientWidth = 461
+      Color = clForm
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 4
+      object feClientLibrary: TFileNameEdit
+        Left = 132
+        Height = 27
+        Top = 0
+        Width = 329
+        DialogTitle = 'Locate the client/embedded library'
+        Filter = 'Dynamic link library|*.dll'
+        FilterIndex = 0
+        HideDirectories = False
+        ButtonWidth = 24
+        NumGlyphs = 1
+        Align = alClient
+        BorderSpacing.Left = 132
+        AutoSize = False
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 0
+        TextHint = 'libfbclient.so.2'
+      end
+    end
+    object Panel6: TPanel
+      Left = 8
+      Height = 27
+      Top = 5
+      Width = 461
+      Align = alTop
+      Alignment = taLeftJustify
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 8
+      BevelOuter = bvNone
+      Caption = 'Connection type'
+      ClientHeight = 27
+      ClientWidth = 461
+      Color = clForm
+      Constraints.MinWidth = 422
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+      object cbServerType: TComboBox
+        Left = 132
+        Height = 27
+        Top = 0
+        Width = 329
+        Align = alTop
+        BorderSpacing.Left = 132
+        ItemHeight = 0
+        ItemIndex = 0
+        Items.Strings = (
+          'Server'
+          'Localhost'
+          'Embedded'
+        )
+        OnChange = cbServerTypeChange
+        ParentFont = False
+        Style = csDropDownList
+        TabOrder = 0
+        Text = 'Server'
+      end
+    end
+    object Shape1: TShape
+      Left = 8
+      Height = 1
+      Top = 77
+      Width = 461
+      Align = alTop
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 8
+      Pen.Color = clBtnShadow
+    end
+    object Shape3: TShape
+      Left = 8
+      Height = 1
+      Top = 36
+      Width = 461
+      Align = alTop
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 8
+      Pen.Color = clBtnShadow
+    end
+    object Shape2: TShape
+      Left = 8
+      Height = 1
+      Top = 149
+      Width = 461
+      Align = alTop
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 8
+      Pen.Color = clBtnShadow
+    end
+    object Shape4: TShape
+      Left = 8
+      Height = 1
+      Top = 113
+      Width = 461
+      Align = alTop
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 8
+      Pen.Color = clBtnShadow
+    end
+    object Shape5: TShape
+      Left = 8
+      Height = 1
+      Top = 185
+      Width = 461
+      Align = alTop
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 8
+      Pen.Color = clBtnShadow
+    end
+    object pnlLockDirecotry: TPanel
+      Left = 8
+      Height = 27
+      Top = 274
+      Width = 461
+      Align = alTop
+      Alignment = taLeftJustify
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 8
+      BevelOuter = bvNone
+      ClientHeight = 27
+      ClientWidth = 461
+      Color = clForm
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 6
+      object deLockDir: TDirectoryEdit
+        Left = 169
+        Height = 27
+        Top = 0
+        Width = 292
+        ShowHidden = False
+        ButtonWidth = 24
+        NumGlyphs = 1
+        Align = alClient
+        AutoSize = False
+        BorderSpacing.Left = 169
+        Enabled = False
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 0
+      end
+      object chbCustomLockDir: TCheckBox
+        Left = 0
+        Height = 21
+        Top = 0
+        Width = 166
+        Caption = 'Use custom lock directory'
+        OnChange = chbCustomLockDirChange
+        ParentFont = False
+        TabOrder = 1
+      end
+    end
+    object Shape6: TShape
+      Left = 8
+      Height = 1
+      Top = 269
+      Width = 461
+      Align = alTop
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 8
+      Pen.Color = clBtnShadow
+    end
+    object pnlTmpDirectory: TPanel
+      Left = 8
+      Height = 27
+      Top = 310
+      Width = 461
+      Align = alTop
+      Alignment = taLeftJustify
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 8
+      BevelOuter = bvNone
+      ClientHeight = 27
+      ClientWidth = 461
+      Color = clForm
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 7
+      object deTmpDir: TDirectoryEdit
+        Left = 169
+        Height = 27
+        Top = 0
+        Width = 292
+        ShowHidden = False
+        ButtonWidth = 24
+        NumGlyphs = 1
+        Align = alClient
+        AutoSize = False
+        BorderSpacing.Left = 169
+        Enabled = False
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 0
+      end
+      object chbCustomTmpDir: TCheckBox
+        Left = 0
+        Height = 21
+        Top = 0
+        Width = 166
+        Caption = 'Use custom tmp directory'
+        OnChange = chbCustomTmpDirChange
+        ParentFont = False
+        TabOrder = 1
+      end
+    end
+    object Shape7: TShape
+      Left = 8
+      Height = 1
+      Top = 305
+      Width = 461
+      Align = alTop
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 8
+      Pen.Color = clBtnShadow
+    end
+  end
+end

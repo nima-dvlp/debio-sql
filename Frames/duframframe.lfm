@@ -1,0 +1,64 @@
+object dframBase: TdframBase
+  Left = 0
+  Height = 297
+  Top = 0
+  Width = 487
+  ClientHeight = 297
+  ClientWidth = 487
+  ParentFont = False
+  TabOrder = 0
+  DesignTop = 24
+  object pnlStatusbar: TPanel
+    Left = 0
+    Height = 18
+    Top = 279
+    Width = 487
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 18
+    ClientWidth = 487
+    ParentFont = False
+    TabOrder = 0
+    object Shape2: TShape
+      Left = 0
+      Height = 1
+      Top = 0
+      Width = 487
+      Align = alTop
+      Pen.Color = clBtnShadow
+      Visible = False
+    end
+    object stInfo: TStaticText
+      Left = 357
+      Height = 17
+      Top = 1
+      Width = 130
+      Align = alRight
+      Caption = 'Info:'
+      ParentFont = False
+      TabOrder = 0
+    end
+    object stServer: TLabel
+      Left = 0
+      Height = 17
+      Top = 1
+      Width = 26
+      Align = alLeft
+      Caption = 'Srv: '
+      Layout = tlCenter
+      ParentColor = False
+      ParentFont = False
+    end
+    object stCrtPos: TLabel
+      Left = 348
+      Height = 17
+      Top = 1
+      Width = 1
+      Align = alRight
+      BorderSpacing.Right = 8
+      Layout = tlCenter
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+end

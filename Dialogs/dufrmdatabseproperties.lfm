@@ -1,0 +1,215 @@
+object FrmDatabseProperties: TFrmDatabseProperties
+  Left = 1992
+  Height = 130
+  Top = 337
+  Width = 390
+  Caption = 'Database Properties (New)'
+  ClientHeight = 130
+  ClientWidth = 390
+  DesignTimePPI = 91
+  Position = poMainFormCenter
+  LCLVersion = '1.9.0.0'
+  object Image1: TImage
+    Left = 8
+    Height = 32
+    Top = 8
+    Width = 32
+    AutoSize = True
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B477261706869639503000089504E47
+      0D0A1A0A0000000D4948445200000020000000200806000000737A7AF4000000
+      1974455874536F6674776172650041646F626520496D616765526561647971C9
+      653C000003374944415478DACC97BD6E134110C7677DDFB10316A9FD0A460428
+      1012345451EAF4A99010527043434F9D262F911644C71B2448C90BA4489782C4
+      47EEFBBCCBCCDEED79EF728E632527386BB4BBB1B3F3DFD9D9DFCE312104FCCB
+      C7D4073B3B3BAAFB026DF3817DFD423BA2CEE1E161BB00F5CC66B3CDFDFDFDAF
+      83C160A3F91D452C8A72088214C230C3DF02F47A0CCD00C330C0342DB02C13CD
+      C2BE292D8EC3DF93C9EE17C6D8D1AD11A87D619A1B171717E824446701244922
+      9DD38EC5710ABE9F48214230E9D4B66D701C073CCF83B5354FB6AEEBA239B0BE
+      BEFE64919FDEFD232BB40F68561F3FBC0046864ECAB6B29ACBE5127AF759796B
+      249880B64F275B206A5BA0AD584682771D815204533BCE5BD6CDABB61B014CCC
+      4530D084F0622B6A91E82209B5B0ABFD6FE6FFB21C58C481E3838383EFE3F178
+      3B8A2248D31414B2F33C975C506CA0870044E0512C28CEFFDC4E4F4F7F280ADE
+      55C0F3C964B28D44242A02E7BC845061519CA18004C228857CC6811109250595
+      10346C2DDB92907AF5E6DDD6C7F7BBDFDA442C2421ADDAF7FDC524BC8E204421
+      B9E060983DE94CAD5E92105BCF451A3A9284DDE48080267C9A7BCF2BEBE81434
+      514CD9AF1CF206A03B21A1463FC65B28D8550498B81185D6B097F783E88C03AC
+      79D6CB31537702AF68B82A07568B864E417613CB70CB16FCBF20DADBDBDB2607
+      59964923C75549861CF8134410C431643C9311E8210B4CCB2820E49010341444
+      E3A7AF5F6E7DFEF0693510A995B68208FB3EFEFD3A4E20071460308C80211DBB
+      AE2DCB312F73258CDC990B2646A8A3EB785E07CC13AFFD4AEE2E09B5B2440981
+      C6AD78670174E994ADB11A095B8858D601EA14D09C5896DF2E80F6BB1430B86B
+      2D40D33306376A00A82AA1628CA7A9BF54C0743A5502ECD58BD33A908A8B6A2E
+      0CE7B6970A38393981D16844D9EEAE9C8A1A1941AB8E9598CBCB4B87049C9F9F
+      2F1640C7EDECEC0C86C3A1878A7D7C357B4470E9F7FB750E24290C023C9E7108
+      094FA5338633151C304B201107A828B1219846FED5D5D51A5A05AF3948B5B763
+      5438C4E6319EE3B7D83E5395904ACE962C60E5FF41195EA1FA2ADC5AD88F31C7
+      7E627B8D73FA8B0450E8953DC06B5B9D6D6811155BE8B30AC35F0106003B338B
+      389DDAED670000000049454E44AE426082
+    }
+  end
+  object Panel2: TPanel
+    Left = 46
+    Height = 22
+    Top = 32
+    Width = 339
+    Align = alTop
+    Alignment = taLeftJustify
+    AutoSize = True
+    BorderSpacing.Left = 46
+    BorderSpacing.Top = 5
+    BorderSpacing.Right = 5
+    BevelOuter = bvNone
+    Caption = 'Databse Name'
+    ClientHeight = 22
+    ClientWidth = 339
+    Color = clForm
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 1
+    object fneDatbaseName: TFileNameEdit
+      Left = 90
+      Height = 22
+      Top = 0
+      Width = 249
+      FilterIndex = 0
+      HideDirectories = False
+      ButtonWidth = 22
+      NumGlyphs = 1
+      Align = alClient
+      BorderSpacing.Left = 90
+      MaxLength = 0
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+  object ButtonPanel1: TButtonPanel
+    Left = 6
+    Height = 36
+    Top = 88
+    Width = 378
+    OKButton.Name = 'OKButton'
+    OKButton.DefaultCaption = True
+    HelpButton.Name = 'HelpButton'
+    HelpButton.DefaultCaption = True
+    CloseButton.Name = 'CloseButton'
+    CloseButton.DefaultCaption = True
+    CancelButton.Name = 'CancelButton'
+    CancelButton.DefaultCaption = True
+    TabOrder = 3
+    ShowButtons = [pbOK, pbCancel]
+  end
+  object Panel1: TPanel
+    Left = 46
+    Height = 22
+    Top = 5
+    Width = 339
+    Align = alTop
+    Alignment = taLeftJustify
+    AutoSize = True
+    BorderSpacing.Left = 46
+    BorderSpacing.Top = 5
+    BorderSpacing.Right = 5
+    BevelOuter = bvNone
+    Caption = 'Database Title'
+    ClientHeight = 22
+    ClientWidth = 339
+    Color = clForm
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+    object edTitle: TEdit
+      Left = 90
+      Height = 22
+      Top = 0
+      Width = 249
+      Align = alClient
+      BorderSpacing.Left = 90
+      ParentFont = False
+      TabOrder = 0
+      TextHint = 'Title'
+    end
+  end
+  object Panel3: TPanel
+    Left = 46
+    Height = 25
+    Top = 59
+    Width = 339
+    Align = alTop
+    Alignment = taLeftJustify
+    AutoSize = True
+    BorderSpacing.Left = 46
+    BorderSpacing.Top = 5
+    BorderSpacing.Right = 5
+    BevelOuter = bvNone
+    Caption = 'Databse charSet'
+    ClientHeight = 25
+    ClientWidth = 339
+    Color = clForm
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 2
+    object edCharset: TComboBox
+      Left = 90
+      Height = 25
+      Top = 0
+      Width = 249
+      Align = alClient
+      AutoSize = False
+      BorderSpacing.Left = 90
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'NONE'
+        'ASCII'
+        'BIG_5'
+        'CYRL'
+        'DOS437'
+        'DOS850'
+        'DOS852'
+        'DOS857'
+        'DOS860'
+        'DOS861'
+        'DOS863'
+        'DOS865'
+        'EUCJ_0208'
+        'GB_2312'
+        'ISO8859_1'
+        'ISO8859_2'
+        'KSC_5601'
+        'NEXT'
+        'OCTETS'
+        'SJIS_0208'
+        'UNICODE_FSS'
+        'UTF8'
+        'WIN1250'
+        'WIN1251'
+        'WIN1252'
+        'WIN1253'
+        'WIN125'
+        'sDOS737'
+        'DOS775'
+        'DOS858'
+        'DOS862'
+        'DOS864'
+        'DOS866'
+        'DOS869'
+        'WIN1255'
+        'WIN1256'
+        'WIN1257'
+        'ISO8859_3'
+        'ISO8859_4'
+        'ISO8859_5'
+        'ISO8859_6'
+        'ISO8859_7'
+        'ISO8859_8'
+        'ISO8859_9'
+        'ISO8859_13'
+      )
+      ParentFont = False
+      Style = csDropDownList
+      TabOrder = 0
+      Text = 'NONE'
+    end
+  end
+end

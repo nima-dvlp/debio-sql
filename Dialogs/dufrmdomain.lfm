@@ -1,0 +1,510 @@
+object DFrmDomain: TDFrmDomain
+  Left = 1651
+  Height = 504
+  Top = 172
+  Width = 438
+  AutoSize = True
+  BorderStyle = bsDialog
+  Caption = 'New Domain'
+  ClientHeight = 504
+  ClientWidth = 438
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object Panel1: TPanel
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 422
+    Align = alTop
+    Alignment = taLeftJustify
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelOuter = bvNone
+    Caption = 'Domain name'
+    ClientHeight = 25
+    ClientWidth = 422
+    Color = clForm
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+    object edDomainName: TEdit
+      Left = 100
+      Height = 25
+      Top = 0
+      Width = 322
+      Align = alClient
+      BorderSpacing.Left = 100
+      CharCase = ecUppercase
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+  object Panel2: TPanel
+    Left = 8
+    Height = 25
+    Top = 41
+    Width = 422
+    Align = alTop
+    Alignment = taLeftJustify
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelOuter = bvNone
+    Caption = 'Type'
+    ClientHeight = 25
+    ClientWidth = 422
+    Color = clForm
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 1
+    object cbType: TComboBox
+      Left = 100
+      Height = 25
+      Top = 0
+      Width = 322
+      Align = alClient
+      AutoSize = False
+      BorderSpacing.Left = 100
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'SMALLINT'
+        'INTEGER'
+        'BIGINT'
+      )
+      OnChange = cbTypeChange
+      ParentFont = False
+      Style = csDropDownList
+      TabOrder = 0
+      Text = 'SMALLINT'
+    end
+  end
+  object Panel4: TPanel
+    Left = 8
+    Height = 25
+    Top = 271
+    Width = 422
+    Align = alTop
+    Alignment = taLeftJustify
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelOuter = bvNone
+    ClientHeight = 25
+    ClientWidth = 422
+    Color = clForm
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 2
+    object chbNotNull: TCheckBox
+      Left = 100
+      Height = 25
+      Top = 0
+      Width = 322
+      Align = alClient
+      BorderSpacing.Left = 100
+      Caption = 'Not null'
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+  object Panel5: TPanel
+    Left = 8
+    Height = 26
+    Top = 391
+    Width = 422
+    Align = alTop
+    Alignment = taLeftJustify
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelOuter = bvNone
+    Caption = 'Default/-  Set it with code completion in code editor...'
+    Color = clInfoBk
+    Constraints.MinHeight = 26
+    Constraints.MinWidth = 422
+    Font.Color = clInfoText
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Panel13: TPanel
+    Left = 8
+    Height = 26
+    Top = 425
+    Width = 422
+    Align = alTop
+    Alignment = taLeftJustify
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelOuter = bvNone
+    Caption = 'Check/-  Set it with code completion in code editor...'
+    Color = clInfoBk
+    Constraints.MinHeight = 26
+    Font.Color = clInfoText
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 4
+  end
+  object Panel11: TPanel
+    Left = 0
+    Height = 45
+    Top = 459
+    Width = 438
+    Align = alTop
+    Alignment = taLeftJustify
+    BorderSpacing.Top = 8
+    BevelOuter = bvNone
+    ClientHeight = 45
+    ClientWidth = 438
+    Color = clForm
+    Constraints.MaxHeight = 45
+    Constraints.MinHeight = 45
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 5
+    object BitBtn1: TBitBtn
+      Left = 355
+      Height = 31
+      Top = 8
+      Width = 75
+      Align = alRight
+      BorderSpacing.Top = 6
+      BorderSpacing.Right = 8
+      BorderSpacing.Bottom = 6
+      Caption = '&OK'
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000064000000640000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000009984850099848500000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000998582009985FF009985FF0099858A000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000998582009985FF009985FF009985FF009985FF0099858A0000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000988481009985FF009985FF009985FF009985FF009985FF009985FF0099
+        858A000000000000000000000000000000000000000000000000000000000098
+        8481009985FF009985FF009985FF009985FF009985FF009985FF009985FF0099
+        85FF0099858A0000000000000000000000000000000000000000009884810099
+        85FF009985FF009985FF009985FF009985FF009985FF009985FF009985FF0099
+        85FF009985FF0099858A000000000000000000000000000000000098867C0099
+        85FF009985FF009985FF009985FF0099867A0099867A009985FF009985FF0099
+        85FF009985FF009985FF00998485000000000000000000000000000000000099
+        8676009985FF009985FF0099857D000000000000000000998575009985FF0099
+        85FF009985FF009985FF009985FF0099858A0000000000000000000000000000
+        0000009985750098867C00000000000000000000000000000000009985750099
+        85FF009985FF009985FF009985FF009985FF0099858A00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000099
+        8575009985FF009985FF009985FF009985FF009985FF0099858A000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000998575009985FF009985FF009985FF009985FF0099857D000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000998575009985FF009985FF0099857D00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000009985750098867C0000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000
+      }
+      OnClick = BitBtn1Click
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Bevel1: TBevel
+      Left = 0
+      Height = 2
+      Top = 0
+      Width = 438
+      Align = alTop
+      Shape = bsTopLine
+    end
+    object BitBtn2: TBitBtn
+      Left = 262
+      Height = 31
+      Top = 8
+      Width = 85
+      Align = alRight
+      BorderSpacing.Top = 6
+      BorderSpacing.Right = 8
+      BorderSpacing.Bottom = 6
+      Cancel = True
+      DefaultCaption = True
+      Kind = bkCancel
+      ModalResult = 2
+      ParentFont = False
+      TabOrder = 1
+    end
+  end
+  object Panel9: TPanel
+    Left = 8
+    Height = 74
+    Top = 189
+    Width = 430
+    Align = alTop
+    Alignment = taLeftJustify
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BevelOuter = bvNone
+    ClientHeight = 74
+    ClientWidth = 430
+    Color = clForm
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 6
+    object pnlDecimalTypes: TPanel
+      Left = 8
+      Height = 66
+      Top = 8
+      Width = 414
+      Align = alTop
+      Alignment = taLeftJustify
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 8
+      BevelOuter = bvNone
+      Caption = 'Type options'
+      ClientHeight = 66
+      ClientWidth = 414
+      ParentFont = False
+      TabOrder = 0
+      Visible = False
+      object Panel10: TPanel
+        Left = 100
+        Height = 25
+        Top = 8
+        Width = 314
+        Align = alTop
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 100
+        BorderSpacing.Top = 8
+        BevelOuter = bvNone
+        Caption = 'Precision'
+        ClientHeight = 25
+        ClientWidth = 314
+        ParentFont = False
+        TabOrder = 0
+        object edPrecision: TEdit
+          Left = 100
+          Height = 25
+          Top = 0
+          Width = 214
+          Align = alClient
+          BorderSpacing.Left = 100
+          NumbersOnly = True
+          ParentFont = False
+          TabOrder = 0
+        end
+      end
+      object Panel12: TPanel
+        Left = 100
+        Height = 25
+        Top = 41
+        Width = 314
+        Align = alTop
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 100
+        BorderSpacing.Top = 8
+        BevelOuter = bvNone
+        Caption = ' Scale'
+        ClientHeight = 25
+        ClientWidth = 314
+        ParentFont = False
+        TabOrder = 1
+        object edScale: TEdit
+          Left = 100
+          Height = 25
+          Top = 0
+          Width = 214
+          Align = alClient
+          BorderSpacing.Left = 100
+          NumbersOnly = True
+          ParentFont = False
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  object Panel14: TPanel
+    Left = 8
+    Height = 107
+    Top = 74
+    Width = 430
+    Align = alTop
+    Alignment = taLeftJustify
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BevelOuter = bvNone
+    ClientHeight = 107
+    ClientWidth = 430
+    Color = clForm
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 7
+    object pnlCharTypes: TPanel
+      Left = 8
+      Height = 99
+      Top = 8
+      Width = 414
+      Align = alTop
+      Alignment = taLeftJustify
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 8
+      BevelOuter = bvNone
+      Caption = 'Type options'
+      ClientHeight = 99
+      ClientWidth = 414
+      Color = clForm
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+      Visible = False
+      object Panel6: TPanel
+        Left = 100
+        Height = 25
+        Top = 8
+        Width = 314
+        Align = alTop
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 100
+        BorderSpacing.Top = 8
+        BevelOuter = bvNone
+        Caption = 'Length'
+        ClientHeight = 25
+        ClientWidth = 314
+        Color = clForm
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        object edLenght: TEdit
+          Left = 100
+          Height = 25
+          Top = 0
+          Width = 214
+          Align = alClient
+          BorderSpacing.Left = 100
+          NumbersOnly = True
+          ParentFont = False
+          TabOrder = 0
+        end
+      end
+      object Panel7: TPanel
+        Left = 100
+        Height = 25
+        Top = 74
+        Width = 314
+        Align = alTop
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 100
+        BorderSpacing.Top = 8
+        BevelOuter = bvNone
+        Caption = 'Collation'
+        ClientHeight = 25
+        ClientWidth = 314
+        Color = clForm
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        object cbCollation: TComboBox
+          Left = 100
+          Height = 25
+          Top = 0
+          Width = 214
+          Align = alClient
+          AutoSize = False
+          BorderSpacing.Left = 100
+          ItemHeight = 0
+          ItemIndex = 0
+          Items.Strings = (
+            'SMALLINT'
+            'INTEGER'
+            'BIGINT'
+          )
+          ParentFont = False
+          Style = csDropDownList
+          TabOrder = 0
+          Text = 'SMALLINT'
+        end
+      end
+      object Panel8: TPanel
+        Left = 100
+        Height = 25
+        Top = 41
+        Width = 314
+        Align = alTop
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 100
+        BorderSpacing.Top = 8
+        BevelOuter = bvNone
+        Caption = 'Character set'
+        ClientHeight = 25
+        ClientWidth = 314
+        Color = clForm
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        object cbCharSet: TComboBox
+          Left = 100
+          Height = 25
+          Top = 0
+          Width = 214
+          Align = alClient
+          AutoSize = False
+          BorderSpacing.Left = 100
+          ItemHeight = 0
+          ItemIndex = 0
+          Items.Strings = (
+            'SMALLINT'
+            'INTEGER'
+            'BIGINT'
+          )
+          ParentFont = False
+          Style = csDropDownList
+          TabOrder = 0
+          Text = 'SMALLINT'
+        end
+      end
+    end
+  end
+  object Panel15: TPanel
+    Left = 8
+    Height = 79
+    Top = 304
+    Width = 422
+    Align = alTop
+    Alignment = taLeftJustify
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelOuter = bvNone
+    Caption = 'Comment'
+    ClientHeight = 79
+    ClientWidth = 422
+    Color = clForm
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 8
+    object mmComment: TMemo
+      Left = 100
+      Height = 79
+      Top = 0
+      Width = 322
+      Align = alClient
+      BorderSpacing.Left = 100
+      Constraints.MaxHeight = 79
+      Constraints.MinHeight = 79
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+end

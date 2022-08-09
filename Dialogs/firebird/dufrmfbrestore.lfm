@@ -1,0 +1,351 @@
+object FrmFBRestore: TFrmFBRestore
+  Left = 291
+  Height = 361
+  Top = 32
+  Width = 354
+  AutoSize = True
+  Caption = 'FrmFBRestore'
+  ClientHeight = 361
+  ClientWidth = 354
+  object Panel1: TPanel
+    Left = 8
+    Height = 27
+    Top = 8
+    Width = 338
+    Align = alTop
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelColor = clBtnShadow
+    ClientHeight = 27
+    ClientWidth = 338
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 9
+      Height = 25
+      Top = 1
+      Width = 97
+      Align = alLeft
+      BorderSpacing.Left = 8
+      Caption = 'Backup file name '
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object FileNameEdit1: TFileNameEdit
+      Left = 106
+      Height = 25
+      Top = 1
+      Width = 231
+      FilterIndex = 0
+      HideDirectories = False
+      ButtonWidth = 23
+      NumGlyphs = 1
+      Align = alClient
+      MaxLength = 0
+      TabOrder = 0
+    end
+  end
+  object Panel3: TPanel
+    Left = 8
+    Height = 117
+    Top = 78
+    Width = 338
+    Align = alTop
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelColor = clBtnShadow
+    ClientHeight = 117
+    ClientWidth = 338
+    TabOrder = 1
+    object Label3: TLabel
+      Left = 1
+      Height = 15
+      Top = 1
+      Width = 336
+      Align = alTop
+      Alignment = taCenter
+      Caption = 'Backup options'
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object Panel4: TPanel
+      Left = 1
+      Height = 96
+      Top = 20
+      Width = 336
+      Align = alClient
+      AutoSize = True
+      BorderSpacing.Top = 4
+      BevelColor = clBtnShadow
+      BevelOuter = bvNone
+      ClientHeight = 96
+      ClientWidth = 336
+      TabOrder = 0
+      object Panel5: TPanel
+        Left = 8
+        Height = 96
+        Top = 0
+        Width = 147
+        Align = alLeft
+        AutoSize = True
+        BorderSpacing.Left = 8
+        BorderSpacing.Right = 8
+        BevelColor = clBtnShadow
+        BevelOuter = bvNone
+        ClientHeight = 96
+        ClientWidth = 147
+        TabOrder = 0
+        object chbIgnoreChecksum: TCheckBox
+          Left = 0
+          Height = 24
+          Top = 0
+          Width = 147
+          Align = alTop
+          Caption = '&Ignore checksum'
+          TabOrder = 0
+        end
+        object chbIgnoreLimbo: TCheckBox
+          Left = 0
+          Height = 24
+          Top = 24
+          Width = 147
+          Align = alTop
+          Caption = 'Ignore &limbo'
+          TabOrder = 1
+        end
+        object chbMetadataOnly: TCheckBox
+          Left = 0
+          Height = 24
+          Top = 48
+          Width = 147
+          Align = alTop
+          Caption = '&Metadata only'
+          TabOrder = 2
+        end
+        object chbNoGrabageCollection: TCheckBox
+          Left = 0
+          Height = 24
+          Top = 72
+          Width = 147
+          Align = alTop
+          Caption = 'No grabage collection'
+          TabOrder = 3
+        end
+      end
+      object Panel6: TPanel
+        Left = 163
+        Height = 96
+        Top = 0
+        Width = 165
+        Align = alClient
+        AutoSize = True
+        BorderSpacing.Left = 8
+        BorderSpacing.Right = 8
+        BevelColor = clBtnShadow
+        BevelOuter = bvNone
+        ClientHeight = 96
+        ClientWidth = 165
+        TabOrder = 1
+        object chbOldMetaData: TCheckBox
+          Left = 0
+          Height = 24
+          Top = 0
+          Width = 165
+          Align = alTop
+          Caption = 'Old metadata description'
+          TabOrder = 0
+        end
+        object chbNonTransportable: TCheckBox
+          Left = 0
+          Height = 24
+          Top = 24
+          Width = 165
+          Align = alTop
+          Caption = 'Non transportable'
+          TabOrder = 1
+        end
+        object chbConvertExtrenalTables: TCheckBox
+          Left = 0
+          Height = 24
+          Top = 48
+          Width = 165
+          Align = alTop
+          Caption = 'Convert external tables'
+          TabOrder = 2
+        end
+        object Expand: TCheckBox
+          Left = 0
+          Height = 24
+          Top = 72
+          Width = 165
+          Align = alTop
+          Caption = 'Expand'
+          TabOrder = 3
+        end
+      end
+    end
+  end
+  object Panel7: TPanel
+    Left = 8
+    Height = 122
+    Top = 203
+    Width = 338
+    Align = alTop
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelColor = clBtnShadow
+    ClientHeight = 122
+    ClientWidth = 338
+    TabOrder = 2
+    object Label4: TLabel
+      Left = 1
+      Height = 15
+      Top = 1
+      Width = 336
+      Align = alTop
+      Alignment = taCenter
+      Caption = 'Verbose...'
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object mmVerbose: TMemo
+      Left = 1
+      Height = 105
+      Top = 16
+      Width = 336
+      Align = alClient
+      BorderStyle = bsNone
+      Color = clForm
+      Constraints.MinHeight = 105
+      ReadOnly = True
+      TabOrder = 0
+    end
+  end
+  object Panel2: TPanel
+    Left = 8
+    Height = 28
+    Top = 333
+    Width = 338
+    Align = alTop
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelColor = clBtnShadow
+    BevelOuter = bvNone
+    ClientHeight = 28
+    ClientWidth = 338
+    TabOrder = 3
+    object BitBtn1: TBitBtn
+      Left = 188
+      Height = 28
+      Top = 0
+      Width = 75
+      Align = alRight
+      Caption = '&OK'
+      Enabled = False
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000064000000640000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000000000006F6459176E605A2500000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000070665C196C615DD76C615CDC6D616115000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000006F6459176C615BD46C615CFF6C615CFF6D615CCA745D5D0B0000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000070665C196C615DD76C615CFF6C615CD66C615CDC6C615CFF6C615CAE8080
+        8002000000000000000000000000000000000000000000000000000000000000
+        00006C625DCC6C615CFF6C615CD66A6060186B5E5E266C615CEC6C615CFF6C61
+        5C90000000000000000000000000000000000000000000000000000000000000
+        00006C615BB86D615CCA6A60601800000000000000006C5F5B3B6C615CF76C61
+        5CFF6C615D710000000000000000000000000000000000000000000000000000
+        00000000000000000000000000000000000000000000000000006C605D556C61
+        5CFD6C615CFD6C625C5300000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000006C61
+        5C746C615CFF6C615CF76C5F5B3B000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00006C625D926C615CFF6C615CEC6F625C270000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000555555036C615CB16C615CFF6D605CD10000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000006666660A6D625CBC6D615BB00000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000
+      }
+      ModalResult = 1
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 263
+      Height = 28
+      Top = 0
+      Width = 75
+      Align = alRight
+      DefaultCaption = True
+      Kind = bkCancel
+      ModalResult = 2
+      TabOrder = 1
+    end
+  end
+  object Panel8: TPanel
+    Left = 8
+    Height = 27
+    Top = 43
+    Width = 338
+    Align = alTop
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelColor = clBtnShadow
+    ClientHeight = 27
+    ClientWidth = 338
+    TabOrder = 4
+    object Label2: TLabel
+      Left = 9
+      Height = 25
+      Top = 1
+      Width = 113
+      Align = alLeft
+      BorderSpacing.Left = 8
+      Caption = 'Database to restore '
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object FileNameEdit2: TFileNameEdit
+      Left = 122
+      Height = 25
+      Top = 1
+      Width = 215
+      FilterIndex = 0
+      HideDirectories = False
+      ButtonWidth = 23
+      NumGlyphs = 1
+      Align = alClient
+      MaxLength = 0
+      TabOrder = 0
+    end
+  end
+  object UIBRestore1: TUIBRestore
+    LibraryName = 'libfbclient.so'
+    OnVerbose = UIBRestore1Verbose
+    FixMetadataCharset = csNONE
+    FixDataCharset = csNONE
+    Left = 88
+    Top = 256
+  end
+end

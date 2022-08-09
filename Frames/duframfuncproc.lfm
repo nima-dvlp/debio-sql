@@ -1,0 +1,23 @@
+inherited Frame1: TFrame1
+  Height = 240
+  Width = 320
+  ClientHeight = 240
+  ClientWidth = 320
+  inherited pnlStatusbar: TPanel
+    Top = 222
+    Width = 320
+    ClientWidth = 320
+    inherited Shape2: TShape
+      Width = 320
+    end
+    inherited stInfo: TStaticText
+      Left = 191
+    end
+    inherited stServer: TLabel
+      Width = 23
+    end
+    inherited stCrtPos: TLabel
+      Left = 182
+    end
+  end
+end

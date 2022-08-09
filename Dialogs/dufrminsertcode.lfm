@@ -1,0 +1,178 @@
+object FrmInsertCode: TFrmInsertCode
+  Left = 2170
+  Height = 571
+  Top = 250
+  Width = 687
+  Caption = 'FrmInsertCode'
+  ClientHeight = 571
+  ClientWidth = 687
+  object Panel1: TPanel
+    Left = 8
+    Height = 29
+    Top = 8
+    Width = 671
+    Align = alTop
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelOuter = bvNone
+    ClientHeight = 29
+    ClientWidth = 671
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 0
+      Height = 29
+      Top = 0
+      Width = 63
+      Align = alLeft
+      Caption = 'Insert Into :'
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object cbInsertIntoTable: TComboBox
+      Left = 71
+      Height = 29
+      Top = 0
+      Width = 240
+      Align = alLeft
+      BorderSpacing.Left = 8
+      ItemHeight = 21
+      TabOrder = 0
+      Text = 'cbInsertIntoTable'
+    end
+  end
+  object Insert: TCheckListBox
+    Left = 8
+    Height = 204
+    Top = 60
+    Width = 671
+    Align = alTop
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    ItemHeight = 0
+    TabOrder = 1
+  end
+  object Panel2: TPanel
+    Left = 8
+    Height = 15
+    Top = 45
+    Width = 671
+    Align = alTop
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BevelOuter = bvNone
+    ClientHeight = 15
+    ClientWidth = 671
+    TabOrder = 2
+    object Label2: TLabel
+      Left = 0
+      Height = 15
+      Top = 0
+      Width = 671
+      Align = alClient
+      Caption = 'Fields'
+      Layout = tlCenter
+      ParentColor = False
+    end
+  end
+  object pnlFromTable: TPanel
+    Left = 8
+    Height = 271
+    Top = 292
+    Width = 671
+    Align = alClient
+    BorderSpacing.Around = 8
+    BevelOuter = bvNone
+    Caption = 'pnlFromTable'
+    ClientHeight = 271
+    ClientWidth = 671
+    TabOrder = 3
+    object Panel3: TPanel
+      Left = 8
+      Height = 29
+      Top = 8
+      Width = 655
+      Align = alTop
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 8
+      BevelOuter = bvNone
+      ClientHeight = 29
+      ClientWidth = 655
+      TabOrder = 0
+      object cbFromTable: TComboBox
+        Left = 42
+        Height = 29
+        Top = 0
+        Width = 240
+        Align = alLeft
+        BorderSpacing.Left = 8
+        ItemHeight = 21
+        TabOrder = 0
+        Text = 'cbTable'
+      end
+      object Label3: TLabel
+        Left = 0
+        Height = 29
+        Top = 0
+        Width = 34
+        Align = alLeft
+        Caption = 'From :'
+        Layout = tlCenter
+        ParentColor = False
+      end
+    end
+    object CheckListBox2: TCheckListBox
+      Left = 8
+      Height = 203
+      Top = 68
+      Width = 655
+      Align = alClient
+      BorderSpacing.Left = 8
+      BorderSpacing.Right = 8
+      ItemHeight = 0
+      TabOrder = 1
+    end
+    object Panel4: TPanel
+      Left = 8
+      Height = 23
+      Top = 45
+      Width = 655
+      Align = alTop
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 8
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 655
+      TabOrder = 2
+      object Label4: TLabel
+        Left = 0
+        Height = 15
+        Top = 8
+        Width = 655
+        Align = alClient
+        BorderSpacing.Top = 8
+        Caption = 'Fields'
+        Layout = tlCenter
+        ParentColor = False
+      end
+    end
+  end
+  object chbFromTable: TCheckBox
+    Left = 8
+    Height = 20
+    Top = 264
+    Width = 671
+    Align = alTop
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    Caption = 'From Table'
+    TabOrder = 4
+  end
+end
